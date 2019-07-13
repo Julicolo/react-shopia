@@ -1,4 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Shopia
+
+Shopia is an online clothing store.<br>
+This project is for learning purposes.
+
+### `Tools that will be used`
+[React Router](https://reacttraining.com/react-router/)<br>
+[Express.js](https://expressjs.com/)<br>
+[MongoDB](https://www.mongodb.com/)<br>
+[GraphQL](https://graphql.org/)<br>
+[Styled Components](https://www.styled-components.com/)<br>
+[ESLint](https://eslint.org/)
 
 ## Available Scripts
 
@@ -38,6 +49,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
