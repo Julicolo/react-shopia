@@ -1,9 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { Currencies } from '../Currencies';
+
+
+// Styled Components
 import { SocialMediaContainer, SocialMediaButton } 
   from '../StyledComponents/SocialMedia';
-import { StyledHeader, TopBar, Button, Menu, Title } 
+import { StyledHeader, TopBar, UserOptions, Button, Menu, Title, CurrencyButton } 
   from '../StyledComponents/StyledHeader';
 
 export default function Header() {
@@ -14,12 +18,12 @@ export default function Header() {
           <FontAwesomeIcon icon="phone-alt" />
           <span>Call +06-31950040</span>
         </div>
-        <div>
+        <UserOptions>
           <span>Welcome Hulio!</span>
           <Button>My Account</Button>
           <Button>My Wishlist</Button>
           <Button>Login</Button>
-        </div>
+        </UserOptions>
       </TopBar>
       <Menu>
         <div>
@@ -63,7 +67,14 @@ export default function Header() {
             color={'#d9bf8f'}
           >
             <FontAwesomeIcon icon={["fab", "instagram"]} />
-          </SocialMediaButton>          
+          </SocialMediaButton> 
+          <CurrencyButton>
+            {
+              Currencies.map(currency => {
+                return <option value={currency} key={currency}>{currency}</option>
+              })
+            }  
+          </CurrencyButton>         
         </SocialMediaContainer>
       </Menu>
     </StyledHeader>

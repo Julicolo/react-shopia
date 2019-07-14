@@ -17,11 +17,23 @@ export const TopBar = styled.div`
 
   & > div {
     margin: 0 5rem;
+    @media (max-width: 1250px) {
+      margin: 0 1rem;  
+    }
   }
 
   & span {
     font: 1rem system-ui;
     padding: 0 2rem;
+  }
+`;
+
+export const UserOptions = styled.div`
+  & button:not(:last-child) {
+    padding: 0 2rem;
+  }
+  & button:last-child {
+    padding-left: 2rem;
   }
 `;
 
@@ -31,7 +43,6 @@ export const Button = styled.button`
   background: rgba(240,240,240);
   font-size: 1rem;
   outline: none;
-  padding: 0 2rem;
 `;
 
 export const Menu = styled.div`
@@ -39,9 +50,8 @@ export const Menu = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 5rem;
   height: 8rem;
-  border-bottom: 1px solid black;
+  margin: 0 5rem;
   & ul {
     display: flex;
     flex-flow: row wrap;
@@ -49,11 +59,14 @@ export const Menu = styled.div`
     & li {
       list-style: none;
       font-family: 'PlayfairDisplay';
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
     & li:not(:last-child) {
-      margin-right: 2rem;
+       margin-right: 2rem;
     }
+  }
+  @media (max-width: 1250px) {
+    margin: 0 1rem;  
   }
 `;
 
@@ -61,4 +74,17 @@ export const Title = styled.h1`
   font-family: 'Krinkes';
   font-size: 5rem;
   margin: 1rem 0;
+`;
+
+export const CurrencyButton = styled.select`
+  background-color: black;
+  color: white;
+  height: 2rem;
+  width: 4.5rem;
+  font-size: .8rem;
+  text-align-last:center;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  margin-left: 5rem;
 `;

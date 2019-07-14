@@ -12,10 +12,10 @@ export const SocialMediaButton = styled.a`
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  width: 3rem;
-  height: 3rem
+  width: 2rem;
+  height: 2rem
   margin: 0.5rem;
-  font-size: 1.25rem;
+  font-size: .75rem;
   & svg {
     color: ${props => props.color || "black"};
   }

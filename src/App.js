@@ -1,14 +1,20 @@
 import React from 'react';
+
+import Header from './layout/Header';
+import Banner from './layout/Banner';
+
+
+// Styled Components
+import { GlobalStyle, Container } 
+  from './StyledComponents/GlobalStyle';
+
+
+// FortAwesome SVG icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faPhoneAlt } 
   from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTwitter, faPinterest, faInstagram } 
   from '@fortawesome/free-brands-svg-icons';
-
-import { GlobalStyle, Container } 
-  from './StyledComponents/GlobalStyle';
-
-import Header from './layout/Header';
 
 library.add(faPhoneAlt, faFacebookF, faTwitter, faPinterest, faInstagram);
 
@@ -17,6 +23,7 @@ export default function App() {
     <Container className="App">
       <GlobalStyle />
       <Header />
+      <Banner />
     </Container>
   );
 };
