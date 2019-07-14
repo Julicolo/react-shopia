@@ -4,10 +4,9 @@ Shopia is an online clothing store.<br>
 This project is for learning purposes.
 
 ### `Tools that will be used`
-[React Router](https://reacttraining.com/react-router/)<br>
-[Express.js](https://expressjs.com/)<br>
-[MongoDB](https://www.mongodb.com/)<br>
-[GraphQL](https://graphql.org/)<br>
+<!-- [React Router](https://reacttraining.com/react-router/)<br> -->
+<!-- [Express.js](https://expressjs.com/)<br> -->
+<!-- [MongoDB](https://www.mongodb.com/)<br> -->
 [Styled Components](https://www.styled-components.com/)<br>
 [ESLint](https://eslint.org/)
 
