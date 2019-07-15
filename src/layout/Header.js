@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { Currencies } from '../Currencies';
+import { Currencies } from '../data/Currencies';
 
 
 // Styled Components
@@ -67,7 +67,7 @@ export default function Header() {
             color={'#d9bf8f'}
           >
             <FontAwesomeIcon icon={["fab", "instagram"]} />
-          </SocialMediaButton> 
+          </SocialMediaButton>
           <CurrencyButton>
             {
               Currencies.map(currency => {

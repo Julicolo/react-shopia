@@ -2,7 +2,8 @@ import React from 'react';
 
 import Header from './layout/Header';
 import Banner from './layout/Banner';
-
+import Services from './layout/Services';
+import MainLanding from './layout/MainLanding';
 
 // Styled Components
 import { GlobalStyle, Container } 
@@ -24,6 +25,8 @@ export default function App() {
       <GlobalStyle />
       <Header />
       <Banner />
+      <Services />
+      <MainLanding />
     </Container>
   );
 };

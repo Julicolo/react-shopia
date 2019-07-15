@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const TriangleContainer = styled.div`
-  width: 100%;
+  width: 100%;    
+  max-width: 100%;
   display: flex;
   justify-content: center;
 `;
@@ -17,6 +18,8 @@ export const Triangle = styled.div`
 
 
 export const BannerContainer = styled.div`
+  width: 100%;
+  max-width: 100%;
   & img {
     max-width: 100%;
     width: 100%
