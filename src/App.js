@@ -6,18 +6,29 @@ import Services from './layout/Services';
 import MainLanding from './layout/MainLanding';
 
 // Styled Components
-import { GlobalStyle, Container } 
-  from './StyledComponents/GlobalStyle';
-
+import {GlobalStyle, Container} from './StyledComponents/GlobalStyle';
 
 // FortAwesome SVG icons
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPhoneAlt } 
-  from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faTwitter, faPinterest, faInstagram } 
-  from '@fortawesome/free-brands-svg-icons';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {faPhoneAlt, faPlane} from '@fortawesome/free-solid-svg-icons';
+import {faLifeRing, faClock} from '@fortawesome/free-regular-svg-icons';
+import {
+  faFacebookF,
+  faTwitter,
+  faPinterest,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
 
-library.add(faPhoneAlt, faFacebookF, faTwitter, faPinterest, faInstagram);
+library.add(
+  faPhoneAlt,
+  faFacebookF,
+  faTwitter,
+  faPinterest,
+  faInstagram,
+  faPlane,
+  faClock,
+  faLifeRing
+);
 
 export default function App() {
   return (
@@ -29,4 +40,4 @@ export default function App() {
       <MainLanding />
     </Container>
   );
-};
+}

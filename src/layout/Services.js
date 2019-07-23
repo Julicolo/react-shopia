@@ -1,29 +1,34 @@
 import React from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {
+  ServicesContainer,
+  ServiceCard,
+} from '../StyledComponents/StyledServices.js';
 
-import { ServicesContainer, ServiceCard } 
-  from '../StyledComponents/StyledServices.js';
-
-export default function Services() { 
-
+export default function Services() {
   return (
     <ServicesContainer>
-      <ServiceCard 
-        bgcolor={'#d9bf8f'}
-      >
-        <p>FREE SHIPPING</p>
-        <p>Min. order amount $75</p>
+      <ServiceCard className="left" bgcolor={'#d9bf8f'}>
+        <FontAwesomeIcon icon="plane" style={{transform: 'rotate(-45deg)'}} />
+        <div className="servicesText">
+          <p>FREE SHIPPING</p>
+          <p>Min. order amount $75</p>
+        </div>
       </ServiceCard>
-      <ServiceCard
-      >
-        <p>30-DAYS RETURN</p>
-        <p>Money Back Guarantee</p>
+      <ServiceCard className="middle">
+        <FontAwesomeIcon icon={['far', 'clock']} />
+        <div className="servicesText">
+          <p>30-DAYS RETURN</p>
+          <p>Money Back Guarantee</p>
+        </div>
       </ServiceCard>
-      <ServiceCard 
-        bgcolor={'#d9bf8f'}
-      >
-        <p>24/7 SUPPORT</p>
-        <p>Life Time Support</p>
+      <ServiceCard className="right" bgcolor={'#d9bf8f'}>
+        <FontAwesomeIcon icon={['far', 'life-ring']} />
+        <div className="servicesText">
+          <p>24/7 SUPPORT</p>
+          <p>Life Time Support</p>
+        </div>
       </ServiceCard>
     </ServicesContainer>
   );
-};
+}

@@ -1,14 +1,22 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-import { Currencies } from '../data/Currencies';
-
+import {Currencies} from '../data/Currencies';
 
 // Styled Components
-import { SocialMediaContainer, SocialMediaButton } 
-  from '../StyledComponents/SocialMedia';
-import { StyledHeader, TopBar, UserOptions, Button, Menu, Title, CurrencyButton } 
-  from '../StyledComponents/StyledHeader';
+import {
+  SocialMediaContainer,
+  SocialMediaButton,
+} from '../StyledComponents/SocialMedia';
+import {
+  StyledHeader,
+  TopBar,
+  UserOptions,
+  Button,
+  Menu,
+  Title,
+  CurrencyButton,
+} from '../StyledComponents/StyledHeader';
 
 export default function Header() {
   return (
@@ -36,47 +44,49 @@ export default function Header() {
         </div>
         <Title>Sophia</Title>
         <SocialMediaContainer>
-          <SocialMediaButton 
+          <SocialMediaButton
             href="https://www.facebook.com"
             rel="noopener noreferrer"
             target="_blank"
             color={'#d9bf8f'}
           >
-            <FontAwesomeIcon icon={["fab", "facebook-f"]} />
+            <FontAwesomeIcon icon={['fab', 'facebook-f']} />
           </SocialMediaButton>
-          <SocialMediaButton 
+          <SocialMediaButton
             href="https://www.twitter.com"
             rel="noopener noreferrer"
             target="_blank"
             color={'#d9bf8f'}
           >
-            <FontAwesomeIcon icon={["fab", "twitter"]} />
+            <FontAwesomeIcon icon={['fab', 'twitter']} />
           </SocialMediaButton>
-          <SocialMediaButton 
+          <SocialMediaButton
             href="https://wwww.pinterest.com"
             rel="noopener noreferrer"
             target="_blank"
             color={'#d9bf8f'}
           >
-            <FontAwesomeIcon icon={["fab", "pinterest"]} />
+            <FontAwesomeIcon icon={['fab', 'pinterest']} />
           </SocialMediaButton>
-          <SocialMediaButton 
+          <SocialMediaButton
             href="https://www.instagram.com"
             rel="noopener noreferrer"
             target="_blank"
             color={'#d9bf8f'}
           >
-            <FontAwesomeIcon icon={["fab", "instagram"]} />
+            <FontAwesomeIcon icon={['fab', 'instagram']} />
           </SocialMediaButton>
           <CurrencyButton>
-            {
-              Currencies.map(currency => {
-                return <option value={currency} key={currency}>{currency}</option>
-              })
-            }  
-          </CurrencyButton>         
+            {Currencies.map(currency => {
+              return (
+                <option value={currency} key={currency}>
+                  {currency}
+                </option>
+              );
+            })}
+          </CurrencyButton>
         </SocialMediaContainer>
       </Menu>
     </StyledHeader>
   );
-};
+}

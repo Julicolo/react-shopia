@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
 import Krinkes from '../fonts/KrinkesDecorPERSONAL.ttf';
 import PlayfairDisplay from '../fonts/PlayfairDisplay-RegularItalic.ttf';
 
@@ -35,13 +35,13 @@ export const Container = styled.div`
 
 export const Line = styled.div`
   height: 1px;
-  width: 75%;
+  width: 100%;
   background-color: #e2e2e2;
-  margin: 0 3rem;
+  margin-${props => props.margin}: 3rem;
 `;
 
 export const Star = styled.div`
-  height: .7rem;
+  height: 0.7rem;
   width: 1.7rem;
   background-color: ${props => props.color || '#d9bf8f'};
   transform: rotate(45deg);
