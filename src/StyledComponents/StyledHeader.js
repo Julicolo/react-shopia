@@ -52,16 +52,18 @@ export const Menu = styled.div`
   align-items: center;
   height: 8rem;
   margin: 0 5rem;
-  & ul {
+  & nav {
     display: flex;
     flex-flow: row wrap;
     padding: 0;
-    & li {
+    & a {
       list-style: none;
       font-family: 'PlayfairDisplay';
       font-size: 1.25rem;
+      text-decoration: none;
+      color: black;
     }
-    & li:not(:last-child) {
+    & a:not(:last-child) {
       margin-right: 2rem;
     }
   }

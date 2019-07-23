@@ -49,7 +49,7 @@ export const MiddleColumn = styled.div`
   display: flex;
   & img {
     width: 100%;
-    height: 100%;
+    height: 99.5%;
     max-width: 100%;
   }
 `;

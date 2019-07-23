@@ -1,13 +1,14 @@
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {NavLink} from 'react-router-dom';
+import {Currencies} from '../../data/Currencies';
 
-import {Currencies} from '../data/Currencies';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 // Styled Components
 import {
   SocialMediaContainer,
   SocialMediaButton,
-} from '../StyledComponents/SocialMedia';
+} from '../../StyledComponents/SocialMedia';
 import {
   StyledHeader,
   TopBar,
@@ -16,7 +17,7 @@ import {
   Menu,
   Title,
   CurrencyButton,
-} from '../StyledComponents/StyledHeader';
+} from '../../StyledComponents/StyledHeader';
 
 export default function Header() {
   return (
@@ -34,14 +35,14 @@ export default function Header() {
         </UserOptions>
       </TopBar>
       <Menu>
-        <div>
-          <ul>
-            <li>Home</li>
-            <li>Gallery</li>
-            <li>Categories</li>
-            <li>Pages</li>
-          </ul>
-        </div>
+        <nav>
+          <NavLink to="/" exact>
+            Home
+          </NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/pagerino">Pagerino</NavLink>
+          <NavLink to="/mario">Mario</NavLink>
+        </nav>
         <Title>Sophia</Title>
         <SocialMediaContainer>
           <SocialMediaButton
@@ -61,7 +62,7 @@ export default function Header() {
             <FontAwesomeIcon icon={['fab', 'twitter']} />
           </SocialMediaButton>
           <SocialMediaButton
-            href="https://wwww.pinterest.com"
+            href="https://www.pinterest.com/"
             rel="noopener noreferrer"
             target="_blank"
             color={'#d9bf8f'}

@@ -1,6 +1,6 @@
 import React from 'react';
 import SummerCollection from './SummerCollection';
-import Brands from './Brands';
+import Brands from '../common/Brands';
 
 import {
   LandingContainer,
@@ -9,9 +9,9 @@ import {
   LeftColumn,
   MiddleColumn,
   RightColumn,
-} from '../StyledComponents/MainLanding.js';
+} from '../../StyledComponents/MainLanding.js';
 
-import {Line, Star} from '../StyledComponents/GlobalStyle';
+import {Line, Star} from '../../StyledComponents/GlobalStyle';
 
 export default function MainLanding() {
   return (
@@ -26,11 +26,11 @@ export default function MainLanding() {
       <HandPicked>
         <LeftColumn>
           <div className="top">
-            <img src={require('../images/1.jpg')} alt="leather boots" />
+            <img src={require('../../images/1.jpg')} alt="leather boots" />
           </div>
           <div className="bot">
             <img
-              src={require('../images/2.jpg')}
+              src={require('../../images/2.jpg')}
               alt="leather & metal bracelet"
             />
           </div>
@@ -38,17 +38,17 @@ export default function MainLanding() {
         <MiddleColumn>
           <div className="mid">
             <img
-              src={require('../images/3.jpg')}
+              src={require('../../images/3.jpg')}
               alt="Paris Hilton Collection"
             />
           </div>
         </MiddleColumn>
         <RightColumn>
           <div className="top">
-            <img src={require('../images/4.jpg')} alt="leather bracelet" />
+            <img src={require('../../images/4.jpg')} alt="leather bracelet" />
           </div>
           <div className="bot">
-            <img src={require('../images/5.jpg')} alt="leather boots" />
+            <img src={require('../../images/5.jpg')} alt="leather boots" />
           </div>
         </RightColumn>
       </HandPicked>

@@ -5,9 +5,9 @@ import {
   TriangleContainer,
   Triangle,
   BannerContainer,
-} from '../StyledComponents/StyledBanner';
+} from '../../StyledComponents/StyledBanner';
 
-import banner1 from '../images/banner1.png';
+import banner1 from '../../images/banner1.png';
 
 export default function Banner() {
   return (

@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
   ServicesContainer,
   ServiceCard,
-} from '../StyledComponents/StyledServices.js';
+} from '../../StyledComponents/StyledServices.js';
 
 export default function Services() {
   return (

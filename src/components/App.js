@@ -1,12 +1,17 @@
 import React from 'react';
+import {Route} from 'react-router-dom';
 
-import Header from './layout/Header';
-import Banner from './layout/Banner';
-import Services from './layout/Services';
-import MainLanding from './layout/MainLanding';
+// home
+import HomePage from './home/HomePage';
+
+// about
+import AboutPage from './about/AboutPage';
+
+// common
+import Header from './common/Header';
 
 // Styled Components
-import {GlobalStyle, Container} from './StyledComponents/GlobalStyle';
+import {GlobalStyle, Container} from '../StyledComponents/GlobalStyle';
 
 // FortAwesome SVG icons
 import {library} from '@fortawesome/fontawesome-svg-core';
@@ -35,9 +40,8 @@ export default function App() {
     <Container className="App">
       <GlobalStyle />
       <Header />
-      <Banner />
-      <Services />
-      <MainLanding />
+      <Route exact path="/" component={HomePage} />
+      <Route path="/" component={AboutPage} />
     </Container>
   );
 }
