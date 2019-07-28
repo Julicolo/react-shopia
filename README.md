@@ -3,13 +3,10 @@
 Shopia is an online clothing store.<br>
 This project is for learning purposes.
 
-### `Tools that I intend to use`
+### `Tools that I'm using for this project`
 
-[Redux](https://redux.js.org/)<br>
 [React Router](https://reacttraining.com/react-router/)<br>
 [Express.js](https://expressjs.com/)<br>
-[MongoDB](https://www.mongodb.com/)<br>
-[Mongoose](https://mongoosejs.com/)<br>
 [Styled Components](https://www.styled-components.com/)<br>
 
 [ESLint](https://eslint.org/)

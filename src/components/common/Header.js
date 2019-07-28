@@ -41,9 +41,9 @@ export default function Header() {
           </NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/pagerino">Pagerino</NavLink>
-          <NavLink to="/mario">Mario</NavLink>
+          <NavLink to="/gallery">Gallery</NavLink>
         </nav>
-        <Title>Sophia</Title>
+        <Title>Shophia</Title>
         <SocialMediaContainer>
           <SocialMediaButton
             href="https://www.facebook.com"
