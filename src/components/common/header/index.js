@@ -1,23 +1,20 @@
 import React from 'react';
+
 import {NavLink} from 'react-router-dom';
-import {Currencies} from '../../data/Currencies';
+import {Currencies} from '../../../data/currencies';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
-// Styled Components
-import {
-  SocialMediaContainer,
-  SocialMediaButton,
-} from '../../StyledComponents/SocialMedia';
+import {SocialMediaButton} from '../social/styles';
 import {
   StyledHeader,
   TopBar,
   UserOptions,
+  ButtonsContainer,
   Button,
   Menu,
   Title,
   CurrencyButton,
-} from '../../StyledComponents/StyledHeader';
+} from './styles';
 
 export default function Header() {
   return (
@@ -44,7 +41,7 @@ export default function Header() {
           <NavLink to="/gallery">Gallery</NavLink>
         </nav>
         <Title>Shophia</Title>
-        <SocialMediaContainer>
+        <ButtonsContainer>
           <SocialMediaButton
             href="https://www.facebook.com"
             rel="noopener noreferrer"
@@ -86,7 +83,7 @@ export default function Header() {
               );
             })}
           </CurrencyButton>
-        </SocialMediaContainer>
+        </ButtonsContainer>
       </Menu>
     </StyledHeader>
   );

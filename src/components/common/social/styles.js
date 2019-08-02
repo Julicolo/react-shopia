@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const SocialMediaContainer = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-`;
-
 export const SocialMediaButton = styled.a`
   border: 2.5px solid ${props => props.color || 'black'};
   display: flex;

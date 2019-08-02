@@ -1,13 +1,8 @@
 import React, {Fragment} from 'react';
 
-// Styled Components
-import {
-  TriangleContainer,
-  Triangle,
-  BannerContainer,
-} from '../../StyledComponents/StyledBanner';
+import {TriangleContainer, Triangle, BannerContainer} from './styles';
 
-import banner1 from '../../images/banner1.png';
+import banner1 from '../../../images/banner1.png';
 
 export default function Banner() {
   return (

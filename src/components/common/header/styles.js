@@ -14,14 +14,12 @@ export const TopBar = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-
   & > div {
     margin: 0 5rem;
     @media (max-width: 1250px) {
       margin: 0 1rem;
     }
   }
-
   & span {
     font: 1rem system-ui;
     padding: 0 2rem;
@@ -35,6 +33,12 @@ export const UserOptions = styled.div`
   & button:last-child {
     padding-left: 2rem;
   }
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 `;
 
 export const Button = styled.button`

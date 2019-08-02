@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 // Krinkes
 
-export const LandingContainer = styled.div`
+export const Main = styled.main`
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -27,6 +27,7 @@ export const HandPicked = styled.div`
   justify-content: space-between;
   align-items: stretch;
   width: 100%;
+  margin: 1rem 0 5rem 0;
   & img {
     width: 100%;
     max-width: 100%;
