@@ -1,15 +1,13 @@
 ## Shopia
 
-Shopia is an online clothing store.<br>
+Shopia is an online clothing store made in React<br>
 This project is for learning purposes.
 
 ### `Tools that I'm using for this project`
 
+[Styled Components](https://styled-components.com/)<br>
 [React Router](https://reacttraining.com/react-router/)<br>
-[Express.js](https://expressjs.com/)<br>
-[Styled Components](https://www.styled-components.com/)<br>
-
-[ESLint](https://eslint.org/)
+[ESLint](https://eslint.org/)<br>
 [Prettier](https://prettier.io/)
 
 ## Available Scripts
@@ -30,7 +28,7 @@ Launches the test runner in the interactive watch mode.<br>
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the build folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.<br>
 
-The build is minified and the filenames include the hashes.<br>
+The build is minified and the filenames include the hashes.

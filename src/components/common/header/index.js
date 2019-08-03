@@ -12,9 +12,10 @@ import {
   ButtonsContainer,
   Button,
   Menu,
-  Title,
   CurrencyButton,
 } from './styles';
+
+const env = process.env.NODE_ENV === 'development' ? true : false;
 
 export default function Header() {
   return (
@@ -33,14 +34,17 @@ export default function Header() {
       </TopBar>
       <Menu>
         <nav>
-          <NavLink to="/" exact>
+          <NavLink to={env ? '/' : '/shopia/'} exact>
             Home
           </NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/pagerino">Pagerino</NavLink>
-          <NavLink to="/gallery">Gallery</NavLink>
+          <NavLink to={env ? '/collections' : '/shopia/collections'}>
+            Browse Collections
+          </NavLink>
+          <NavLink to={env ? '/about' : '/shopia/about'}>About Us</NavLink>
         </nav>
-        <Title>Shophia</Title>
+        <NavLink to={env ? '/' : '/shopia/'} exact className="title">
+          Shophia
+        </NavLink>
         <ButtonsContainer>
           <SocialMediaButton
             href="https://www.facebook.com"

@@ -29,13 +29,15 @@ library.add(
   faLifeRing
 );
 
+const env = process.env.NODE_ENV === 'development' ? true : false;
+
 export default function App() {
   return (
     <Container className="App">
       <GlobalStyle />
       <Header />
-      <Route exact path="/" component={Home} />
-      <Route path="/" component={About} />
+      <Route exact path={env ? '/' : '/shopia/'} component={Home} />
+      <Route path={env ? '/about' : '/shopia/about'} component={About} />
     </Container>
   );
 }

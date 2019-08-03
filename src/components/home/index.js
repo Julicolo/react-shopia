@@ -14,24 +14,26 @@ import {
   RightColumn,
 } from './styles';
 
-const brandsImages = require
-  .context('../../images/brands', false, /\.(png|jpe?g|svg)$/)
-  .keys()
-  .map(path => '/images/brands/' + path);
+function importAll(resolve) {
+  return resolve.keys().map(resolve);
+}
 
-const summerCollectionImages = require
-  .context('../../images/summercollection', false, /\.(png|jpe?g|svg)$/)
-  .keys()
-  .map(path => '/images/summercollection/' + path);
+const summerCollectionImages = importAll(
+  require.context('../../images/summercollection', false, /\.(png|jpe?g|svg)$/)
+);
 
-const right = (
+const brandsImages = importAll(
+  require.context('../../images/brands', false, /\.(png|jpe?g|svg)$/)
+);
+
+const lineStarRight = (
   <Fragment>
     <Line margin={'right'} />
     <Star />
   </Fragment>
 );
 
-const left = (
+const lineStarLeft = (
   <Fragment>
     <Star />
     <Line margin={'left'} />
@@ -45,9 +47,9 @@ export default function App() {
       <Main>
         <Services />
         <StripedHeading>
-          {right}
+          {lineStarRight}
           <h2>Hand Picked</h2>
-          {left}
+          {lineStarLeft}
         </StripedHeading>
         <HandPicked>
           <LeftColumn>
@@ -79,9 +81,9 @@ export default function App() {
           </RightColumn>
         </HandPicked>
         <StripedHeading>
-          {right}
+          {lineStarRight}
           <h2>Summer Collection</h2>
-          {left}
+          {lineStarLeft}
         </StripedHeading>
         <CollectionContainer>
           {summerCollectionImages.map(image => (
@@ -89,9 +91,9 @@ export default function App() {
           ))}
         </CollectionContainer>
         <StripedHeading>
-          {right}
+          {lineStarRight}
           <h2>Our Brands</h2>
-          {left}
+          {lineStarLeft}
         </StripedHeading>
         <BaseContainer>
           {brandsImages.map(image => (
@@ -99,9 +101,9 @@ export default function App() {
           ))}
         </BaseContainer>
         <StripedHeading>
-          {right}
+          {lineStarRight}
           <h2>Customers say</h2>
-          {left}
+          {lineStarLeft}
         </StripedHeading>
       </Main>
     </Fragment>

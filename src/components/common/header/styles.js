@@ -56,6 +56,13 @@ export const Menu = styled.div`
   align-items: center;
   height: 8rem;
   margin: 0 5rem;
+  & .title {
+    font-family: 'Krinkes';
+    font-size: 5rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: black;
+  }
   & nav {
     display: flex;
     flex-flow: row wrap;
@@ -74,12 +81,6 @@ export const Menu = styled.div`
   @media (max-width: 1250px) {
     margin: 0 1rem;
   }
-`;
-
-export const Title = styled.h1`
-  font-family: 'Krinkes';
-  font-size: 5rem;
-  margin: 1rem 0;
 `;
 
 export const CurrencyButton = styled.select`
