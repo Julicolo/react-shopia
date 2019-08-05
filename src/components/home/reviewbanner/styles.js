@@ -6,7 +6,7 @@ export const ReviewBannerContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  padding: 0 calc((100% - 90rem) / 2);
+  padding: 0 calc((100% - 85rem) / 2);
 `;
 
 export const Review = styled.div`

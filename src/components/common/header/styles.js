@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
 
 export const TopBar = styled.div`
   background: rgba(240, 240, 240);
-  padding: 0 calc((100% - 90rem) / 2);
+  padding: 0 calc((100% - 80rem) / 2);
   height: 3rem;
   display: flex;
   flex-flow: row wrap;
@@ -50,7 +50,7 @@ export const Menu = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 8rem;
-  padding: 0 calc((100% - 90rem) / 2);
+  padding: 0 calc((100% - 80rem) / 2);
   & .title {
     font-family: 'Krinkes';
     font-size: 5rem;
