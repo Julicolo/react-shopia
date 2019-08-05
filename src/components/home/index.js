@@ -1,7 +1,10 @@
 import React, {Fragment} from 'react';
 
 import Banner from './banner/';
+import Brands from '../common/brands';
 import Services from '../common/services';
+import SummerCollection from '../collections/summer';
+import ReviewBanner from './reviewbanner';
 
 import {CollectionContainer, BaseContainer} from '../collections/styles';
 import {Line, Star} from '../styles';
@@ -13,18 +16,6 @@ import {
   MiddleColumn,
   RightColumn,
 } from './styles';
-
-function importAll(resolve) {
-  return resolve.keys().map(resolve);
-}
-
-const summerCollectionImages = importAll(
-  require.context('../../images/summercollection', false, /\.(png|jpe?g|svg)$/)
-);
-
-const brandsImages = importAll(
-  require.context('../../images/brands', false, /\.(png|jpe?g|svg)$/)
-);
 
 const lineStarRight = (
   <Fragment>
@@ -54,11 +45,14 @@ export default function App() {
         <HandPicked>
           <LeftColumn>
             <div className="top">
-              <img src={require('../../images/1.jpg')} alt="leather boots" />
+              <img
+                src={require('../../images/highlighted/1.jpg')}
+                alt="leather boots"
+              />
             </div>
             <div className="bot">
               <img
-                src={require('../../images/2.jpg')}
+                src={require('../../images/highlighted/2.jpg')}
                 alt="leather & metal bracelet"
               />
             </div>
@@ -66,17 +60,23 @@ export default function App() {
           <MiddleColumn>
             <div className="mid">
               <img
-                src={require('../../images/3.jpg')}
+                src={require('../../images/highlighted/3.jpg')}
                 alt="Paris Hilton Collection"
               />
             </div>
           </MiddleColumn>
           <RightColumn>
             <div className="top">
-              <img src={require('../../images/4.jpg')} alt="leather bracelet" />
+              <img
+                src={require('../../images/highlighted/4.jpg')}
+                alt="leather bracelet"
+              />
             </div>
             <div className="bot">
-              <img src={require('../../images/5.jpg')} alt="leather boots" />
+              <img
+                src={require('../../images/highlighted/5.jpg')}
+                alt="leather boots"
+              />
             </div>
           </RightColumn>
         </HandPicked>
@@ -86,9 +86,7 @@ export default function App() {
           {lineStarLeft}
         </StripedHeading>
         <CollectionContainer>
-          {summerCollectionImages.map(image => (
-            <img src={image} alt="lolxd" key={image} />
-          ))}
+          <SummerCollection />
         </CollectionContainer>
         <StripedHeading>
           {lineStarRight}
@@ -96,9 +94,7 @@ export default function App() {
           {lineStarLeft}
         </StripedHeading>
         <BaseContainer>
-          {brandsImages.map(image => (
-            <img src={image} alt="lolxd" key={image} />
-          ))}
+          <Brands />
         </BaseContainer>
         <StripedHeading>
           {lineStarRight}
@@ -106,6 +102,7 @@ export default function App() {
           {lineStarLeft}
         </StripedHeading>
       </Main>
+      <ReviewBanner />
     </Fragment>
   );
 }

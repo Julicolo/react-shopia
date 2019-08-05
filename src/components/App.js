@@ -4,7 +4,7 @@ import {Route} from 'react-router-dom';
 import Home from './home';
 import About from './about';
 import Header from './common/header';
-
+import Footer from './common/footer';
 import {GlobalStyle, Container} from './styles';
 
 // FortAwesome SVG icons
@@ -38,6 +38,7 @@ export default function App() {
       <Header />
       <Route exact path={env ? '/' : '/shopia/'} component={Home} />
       <Route path={env ? '/about' : '/shopia/about'} component={About} />
+      <Footer />
     </Container>
   );
 }

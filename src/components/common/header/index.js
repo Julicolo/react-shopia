@@ -1,6 +1,6 @@
 import React from 'react';
-
 import {NavLink} from 'react-router-dom';
+
 import {Currencies} from '../../../data/currencies';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';

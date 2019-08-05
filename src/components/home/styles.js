@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-// Krinkes
-
 export const Main = styled.main`
   display: flex;
   flex-flow: column wrap;

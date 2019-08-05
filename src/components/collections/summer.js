@@ -1,29 +1,15 @@
 import React from 'react';
 
 function importAll(resolve) {
-  const images = {};
-  resolve.keys().forEach((item, index) => {
-    images[item.replace('./', '')] = resolve(item);
-  });
-  return images;
+  return resolve.keys().map(resolve);
 }
 
-const imageObject = importAll(
+const summerCollectionImages = importAll(
   require.context('../../images/summercollection', false, /\.(png|jpe?g|svg)$/)
 );
 
 export default function SummerCollection() {
-  return (
-    <CollectionContainer>
-      {Object.keys(imageObject).map(image => {
-        return (
-          <img
-            src={`/images/summercollection/${image}`}
-            alt="summer collection"
-            key={image}
-          />
-        );
-      })}
-    </CollectionContainer>
-  );
+  return summerCollectionImages.map(image => (
+    <img src={image} alt="lolxd" key={image} />
+  ));
 }
