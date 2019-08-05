@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/shopia/static/js/main.0c8bca32.chunk.js",
-    "main.js.map": "/shopia/static/js/main.0c8bca32.chunk.js.map",
+    "main.js": "/shopia/static/js/main.3e4501bd.chunk.js",
+    "main.js.map": "/shopia/static/js/main.3e4501bd.chunk.js.map",
     "runtime~main.js": "/shopia/static/js/runtime~main.f7574200.js",
     "runtime~main.js.map": "/shopia/static/js/runtime~main.f7574200.js.map",
-    "static/js/2.249a5685.chunk.js": "/shopia/static/js/2.249a5685.chunk.js",
-    "static/js/2.249a5685.chunk.js.map": "/shopia/static/js/2.249a5685.chunk.js.map",
+    "static/js/2.2b373f13.chunk.js": "/shopia/static/js/2.2b373f13.chunk.js",
+    "static/js/2.2b373f13.chunk.js.map": "/shopia/static/js/2.2b373f13.chunk.js.map",
     "index.html": "/shopia/index.html",
-    "precache-manifest.171997930943f8e1be17280c29501247.js": "/shopia/precache-manifest.171997930943f8e1be17280c29501247.js",
+    "precache-manifest.e4f992d8b600d0301b7a8e3da5c0b717.js": "/shopia/precache-manifest.e4f992d8b600d0301b7a8e3da5c0b717.js",
     "service-worker.js": "/shopia/service-worker.js",
     "static/media/1.jpg": "/shopia/static/media/1.def6f48e.jpg",
     "static/media/2.jpg": "/shopia/static/media/2.c9e0653d.jpg",
@@ -20,6 +20,7 @@
     "static/media/brend1.jpg": "/shopia/static/media/brend1.fa3f80ae.jpg",
     "static/media/brend3.jpg": "/shopia/static/media/brend3.c1a7e3f6.jpg",
     "static/media/brend4.jpg": "/shopia/static/media/brend4.aec2b329.jpg",
+    "static/media/cindy.png": "/shopia/static/media/cindy.93360e8e.png",
     "static/media/gallery1.jpg": "/shopia/static/media/gallery1.5bc85282.jpg",
     "static/media/gallery2.jpg": "/shopia/static/media/gallery2.e3f8135a.jpg",
     "static/media/gallery3.png": "/shopia/static/media/gallery3.11b693f2.png",
@@ -27,6 +28,7 @@
     "static/media/gallery5.jpg": "/shopia/static/media/gallery5.df316d29.jpg",
     "static/media/gallery6.jpg": "/shopia/static/media/gallery6.5a23e254.jpg",
     "static/media/gallery7.jpg": "/shopia/static/media/gallery7.e19e89b9.jpg",
-    "static/media/gallery8.jpg": "/shopia/static/media/gallery8.94659b14.jpg"
+    "static/media/gallery8.jpg": "/shopia/static/media/gallery8.94659b14.jpg",
+    "static/media/khalid.png": "/shopia/static/media/khalid.2eb07932.png"
   }
 }

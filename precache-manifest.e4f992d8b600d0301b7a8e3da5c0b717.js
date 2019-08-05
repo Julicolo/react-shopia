@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b5170cecb19435305300a1116b979fd2",
+    "revision": "8120e8e0688814a450dd5eb12caec09d",
     "url": "/shopia/index.html"
   },
   {
-    "revision": "d94bffd331cd64a7db40",
-    "url": "/shopia/static/js/2.249a5685.chunk.js"
+    "revision": "f48cc276285b816a8106",
+    "url": "/shopia/static/js/2.2b373f13.chunk.js"
   },
   {
-    "revision": "80d30dc92dffc60e4fe6",
-    "url": "/shopia/static/js/main.0c8bca32.chunk.js"
+    "revision": "c46199b64a1b8a794b7b",
+    "url": "/shopia/static/js/main.3e4501bd.chunk.js"
   },
   {
     "revision": "8b3a2397c8f9bdffb893",
@@ -60,6 +60,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/brend4.aec2b329.jpg"
   },
   {
+    "revision": "93360e8ec6c4149558b788ca3e7e611a",
+    "url": "/shopia/static/media/cindy.93360e8e.png"
+  },
+  {
     "revision": "5bc852823e44913e6da70d43a0662bae",
     "url": "/shopia/static/media/gallery1.5bc85282.jpg"
   },
@@ -90,5 +94,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "94659b146a3df740fe1de37701325c58",
     "url": "/shopia/static/media/gallery8.94659b14.jpg"
+  },
+  {
+    "revision": "2eb0793233a34770f6d44b416de1e0b8",
+    "url": "/shopia/static/media/khalid.2eb07932.png"
   }
 ]);
