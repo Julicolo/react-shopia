@@ -10,6 +10,7 @@ export const SocialMediaButton = styled.a`
   height: 2rem
   margin: 0.5rem;
   font-size: .75rem;
+  background-color: white;
   & svg {
     color: ${props => props.color || 'black'};
   }

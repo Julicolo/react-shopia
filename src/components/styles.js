@@ -30,7 +30,8 @@ export const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
   display: flex;
   flex-flow: column wrap;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Line = styled.div`

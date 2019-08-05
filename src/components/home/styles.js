@@ -6,6 +6,7 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
   margin: 0 5rem;
+  max-width: 90rem;
 `;
 
 export const StripedHeading = styled.div`

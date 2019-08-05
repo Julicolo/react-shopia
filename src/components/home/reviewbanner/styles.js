@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
 export const ReviewBannerContainer = styled.div`
-  width: 100%;
   background-color: ${props => props.bgcolor || '#d9bf8f'};
   margin: 1rem 0 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  padding: 0 calc((100% - 90rem) / 2);
 `;
 
 export const Review = styled.div`
   width: 50%;
   display: flex;
   flex-flow: row nowrap;
-  padding: 2rem;
+  padding: 2rem 0;
   text-align: ${props => props.align || 'left'};
   & section {
     margin-top: 2rem;

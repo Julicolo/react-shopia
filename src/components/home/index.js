@@ -34,8 +34,8 @@ const lineStarLeft = (
 export default function App() {
   return (
     <Fragment>
-      <Banner />
       <Main>
+        <Banner />
         <Services />
         <StripedHeading>
           {lineStarRight}
