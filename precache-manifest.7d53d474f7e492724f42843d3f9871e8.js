@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "93d8a36876bdee3bede8e55df222ae44",
+    "revision": "5f64a1ecd10f6f08166674b082de9168",
     "url": "/shopia/index.html"
   },
   {
-    "revision": "095b3e3846590591f732",
-    "url": "/shopia/static/js/2.5146f048.chunk.js"
+    "revision": "e61f79611350dc173894",
+    "url": "/shopia/static/js/2.0cdbfbc2.chunk.js"
   },
   {
-    "revision": "dcdde700d3cc15691272",
-    "url": "/shopia/static/js/main.3253660e.chunk.js"
+    "revision": "22e3fda77c585d354829",
+    "url": "/shopia/static/js/main.af732cf0.chunk.js"
   },
   {
     "revision": "8b3a2397c8f9bdffb893",
@@ -18,6 +18,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "def6f48eaad24f283d8157e5ed814c95",
     "url": "/shopia/static/media/1.def6f48e.jpg"
+  },
+  {
+    "revision": "fca49d03bde2d693c401add9dd18e464",
+    "url": "/shopia/static/media/1.fca49d03.png"
+  },
+  {
+    "revision": "3b07ef09cc1580584fa7de3ed21e1085",
+    "url": "/shopia/static/media/2.3b07ef09.png"
   },
   {
     "revision": "c9e0653dfa4854aef256ce683f24a341",
@@ -42,22 +50,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9030fe95312324ef79111e6bf813de7a",
     "url": "/shopia/static/media/PlayfairDisplay-RegularItalic.9030fe95.ttf"
-  },
-  {
-    "revision": "fca49d03bde2d693c401add9dd18e464",
-    "url": "/shopia/static/media/banner1.fca49d03.png"
-  },
-  {
-    "revision": "fa3f80ae750893765b14346cd5f521a8",
-    "url": "/shopia/static/media/brend1.fa3f80ae.jpg"
-  },
-  {
-    "revision": "c1a7e3f6a8365ab5e8a4f7c284f023c5",
-    "url": "/shopia/static/media/brend3.c1a7e3f6.jpg"
-  },
-  {
-    "revision": "aec2b329748551493c1d44809c6eaa86",
-    "url": "/shopia/static/media/brend4.aec2b329.jpg"
   },
   {
     "revision": "93360e8ec6c4149558b788ca3e7e611a",
