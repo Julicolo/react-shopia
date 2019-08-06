@@ -4,17 +4,17 @@ import Banner from './banner/';
 import Brands from '../common/brands';
 import Services from '../common/services';
 import ReviewBanner from './reviewbanner';
-import SummerCollection from '../collections/summer';
+import SwitchGames from '../products';
 
-import {CollectionContainer, BaseContainer} from '../collections/styles';
+import {CollectionContainer, BaseContainer} from '../products/styles';
 import {Line, Star} from '../styles';
 import {
   Main,
   StripedHeading,
-  HandPicked,
-  LeftColumn,
-  MiddleColumn,
-  RightColumn,
+  ImagesContainer,
+  FeaturedImage,
+  UpcomingReleasesContainer,
+  UpcomingReleases,
 } from './styles';
 
 const lineStarRight = (
@@ -39,54 +39,60 @@ export default function App() {
         <Services />
         <StripedHeading>
           {lineStarRight}
-          <h2>Hand Picked</h2>
+          <h2>Upcoming Titles</h2>
           {lineStarLeft}
         </StripedHeading>
-        <HandPicked>
-          <LeftColumn>
-            <div className="top">
+        <ImagesContainer>
+          <FeaturedImage>
+            <img
+              src={require('../../images/highlighted/mid1.jpg')}
+              alt="Paris Hilton Collection"
+            />
+          </FeaturedImage>
+          <UpcomingReleasesContainer>
+            <UpcomingReleases>
               <img
-                src={require('../../images/highlighted/1.jpg')}
+                src={require('../../images/highlighted/left1.jpg')}
                 alt="leather boots"
               />
-            </div>
-            <div className="bot">
               <img
-                src={require('../../images/highlighted/2.jpg')}
+                src={require('../../images/highlighted/left2.jpg')}
+                alt="leather & metal bracelet"
+              />{' '}
+              <img
+                src={require('../../images/highlighted/left3.jpg')}
+                alt="leather boots"
+              />
+              <img
+                src={require('../../images/highlighted/left4.jpg')}
                 alt="leather & metal bracelet"
               />
-            </div>
-          </LeftColumn>
-          <MiddleColumn>
-            <div className="mid">
               <img
-                src={require('../../images/highlighted/3.jpg')}
-                alt="Paris Hilton Collection"
-              />
-            </div>
-          </MiddleColumn>
-          <RightColumn>
-            <div className="top">
-              <img
-                src={require('../../images/highlighted/4.jpg')}
+                src={require('../../images/highlighted/right1.jpg')}
                 alt="leather bracelet"
               />
-            </div>
-            <div className="bot">
               <img
-                src={require('../../images/highlighted/5.jpg')}
+                src={require('../../images/highlighted/right2.jpg')}
                 alt="leather boots"
               />
-            </div>
-          </RightColumn>
-        </HandPicked>
+              <img
+                src={require('../../images/highlighted/right3.jpg')}
+                alt="leather bracelet"
+              />
+              <img
+                src={require('../../images/highlighted/right4.jpg')}
+                alt="leather boots"
+              />
+            </UpcomingReleases>
+          </UpcomingReleasesContainer>
+        </ImagesContainer>
         <StripedHeading>
           {lineStarRight}
-          <h2>Summer Collection</h2>
+          <h2>Switch Games</h2>
           {lineStarLeft}
         </StripedHeading>
         <CollectionContainer>
-          <SummerCollection />
+          <SwitchGames />
         </CollectionContainer>
         <StripedHeading>
           {lineStarRight}
@@ -94,7 +100,7 @@ export default function App() {
           {lineStarLeft}
         </StripedHeading>
         <BaseContainer>
-          <Brands />
+          <Brands className="brands" />
         </BaseContainer>
         <StripedHeading>
           {lineStarRight}

@@ -9,5 +9,7 @@ const brandsImages = importAll(
 );
 
 export default function Brands() {
-  return brandsImages.map(image => <img src={image} alt="lolxd" key={image} />);
+  return brandsImages.map(image => (
+    <img src={image} alt="lolxd" key={image} className="brands" />
+  ));
 }

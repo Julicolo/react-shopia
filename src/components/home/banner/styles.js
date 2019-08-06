@@ -20,11 +20,12 @@ export const Triangle = styled.div`
 export const BannerContainer = styled.div`
   width: 100%;
   max-width: 100%;
-  min-height: 400px;
+  min-height: 20rem;
   position: relative;
   & img {
     max-width: 100%;
     width: 100%;
+    height: 20rem;
   }
 `;
 

@@ -22,42 +22,28 @@ export const StripedHeading = styled.div`
   }
 `;
 
-export const HandPicked = styled.div`
+export const ImagesContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
   width: 100%;
-  margin: 1rem 0 5rem 0;
-  & img {
-    width: 100%;
-    max-width: 100%;
-  }
-  & .top,
-  .bot {
-    margin: 0.5rem 0;
-  }
-  & .mid {
-    margin: 0.5rem 1rem;
-  }
 `;
 
-export const LeftColumn = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-`;
-
-export const MiddleColumn = styled.div`
+export const FeaturedImage = styled.div`
   display: flex;
   & img {
-    width: 100%;
-    height: 99.5%;
     max-width: 100%;
+    height: auto;
   }
 `;
 
-export const RightColumn = styled.div`
+export const UpcomingReleasesContainer = styled.div`
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  & img {
+    margin: 0.5rem;
+  }
+`;
+
+export const UpcomingReleases = styled.div`
+  // xd
 `;
