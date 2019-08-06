@@ -4,6 +4,7 @@ export const StyledHeader = styled.header`
   display: flex;
   flex-flow: column wrap;
   width: 100%;
+  flex-shrink: 0;
 `;
 
 export const TopBar = styled.div`
@@ -14,7 +15,6 @@ export const TopBar = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-
   & span {
     font: 1rem system-ui;
     padding: 0 2rem;

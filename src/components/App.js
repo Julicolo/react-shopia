@@ -1,10 +1,13 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import Home from './home';
 import About from './about';
 import Header from './common/header';
 import Footer from './common/footer';
+import PageNotFound from './common/404';
+import {linkTo} from '../helpers';
+
 import {GlobalStyle, Container} from './styles';
 
 // FortAwesome SVG icons
@@ -29,16 +32,19 @@ library.add(
   faLifeRing
 );
 
-const env = process.env.NODE_ENV === 'development' ? true : false;
-
-export default function App() {
-  return (
-    <Container className="App">
-      <GlobalStyle />
-      <Header />
-      <Route exact path={env ? '/' : '/shopia/'} component={Home} />
-      <Route path={env ? '/about' : '/shopia/about'} component={About} />
-      <Footer />
-    </Container>
-  );
+export default class Shopia extends React.Component {
+  render() {
+    return (
+      <Container>
+        <GlobalStyle />
+        <Header />
+        <Switch>
+          <Route exact path={linkTo('/')} component={Home} />
+          <Route path={linkTo('/about')} component={About} />
+          <Route component={PageNotFound} />
+        </Switch>
+        <Footer />
+      </Container>
+    );
+  }
 }

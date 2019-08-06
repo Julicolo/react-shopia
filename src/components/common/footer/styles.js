@@ -7,6 +7,7 @@ export const StyledFooter = styled.footer`
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 0 calc((100% - 80rem) / 2);
+  flex-shrink: 0;
   width: 100%;
   h3 {
     color: white;

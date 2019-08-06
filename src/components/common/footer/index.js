@@ -1,69 +1,45 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
+import {linkTo} from '../../../helpers';
+
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import {SocialMediaButton} from '../social/styles';
 import {StyledFooter} from './styles';
-
-const env = process.env.NODE_ENV === 'development' ? true : false;
 
 export default function Footer() {
   return (
     <StyledFooter>
       <div>
         <h3>Shops</h3>
-        <NavLink to={env ? '/new' : '/shopia/new'}>New</NavLink>
-        <NavLink to={env ? '/sales' : '/shopia/sales'}>Sales</NavLink>
-        <NavLink to={env ? '/women' : '/shopia/women'}>Women</NavLink>
-        <NavLink to={env ? '/men' : '/shopia/men'}>Men</NavLink>
-        <NavLink to={env ? '/shoes' : '/shopia/shoes'}>Shoes</NavLink>
-        <NavLink to={env ? '/topbrands' : '/shopia/topbrands'}>
-          Top Brands
-        </NavLink>
-        <NavLink to={env ? '/Bags & Accesories' : '/shopia/Bags & Accesories'}>
-          Bags & Accesories
-        </NavLink>
+        <NavLink to={linkTo('/new')}>New</NavLink>
+        <NavLink to={linkTo('/sales')}>Sales</NavLink>
+        <NavLink to={linkTo('/women')}>Women</NavLink>
+        <NavLink to={linkTo('/men')}>Men</NavLink>
+        <NavLink to={linkTo('/shoes')}>Shoes</NavLink>
+        <NavLink to={linkTo('/topbrands')}>Top Brands</NavLink>
+        <NavLink to={linkTo('/Bags')}>Bags & Accesories</NavLink>
       </div>
       <div>
         <h3>Information</h3>
-        <NavLink to={env ? '/about' : '/about/'}>About us</NavLink>
-        <NavLink to={env ? '/customerservice' : '/shopia/customerservice'}>
-          Customer Service
-        </NavLink>
-        <NavLink to={env ? '/collections' : '/shopia/collections'}>
-          Collections
-        </NavLink>
-        <NavLink to={env ? '/bestsellers' : '/shopia/bestsellers'}>
-          Best Sellers
-        </NavLink>
-        <NavLink to={env ? '/manufacturers' : '/shopia/manufacturers'}>
-          Manufacturers
-        </NavLink>
-        <NavLink to={env ? '/privacypolicy' : '/shopia/privacypolicy'}>
-          Privacy Policy
-        </NavLink>
-        <NavLink to={env ? '/terms' : '/shopia/terms'}>
-          Terms & Conditions
-        </NavLink>
+        <NavLink to={linkTo('/about')}>About us</NavLink>
+        <NavLink to={linkTo('/customerservice')}>Customer Service</NavLink>
+        <NavLink to={linkTo('/collections')}>Collections</NavLink>
+        <NavLink to={linkTo('/bestsellers')}>Best Sellers</NavLink>
+        <NavLink to={linkTo('/manufacturers')}>Manufacturers</NavLink>
+        <NavLink to={linkTo('/privacypolicy')}>Privacy Policy</NavLink>
+        <NavLink to={linkTo('/terms')}>Terms & Conditions</NavLink>
       </div>
       <div>
         <h3>Customer Service</h3>
-        <NavLink to={env ? '/searchterms' : '/searchterms/'}>
-          Search Terms
-        </NavLink>
-        <NavLink to={env ? '/ordersandreturns' : '/shopia/ordersandreturns'}>
-          Orders and Returns
-        </NavLink>
-        <NavLink to={env ? '/contact' : '/shopia/contact'}>Contact us</NavLink>
-        <NavLink to={env ? '/rss' : '/shopia/rss'}>RSS</NavLink>
-        <NavLink to={env ? '/faq' : '/shopia/faq'}>Help & FAQ's</NavLink>
-        <NavLink to={env ? '/consultant' : '/shopia/consultant'}>
-          Consultant
-        </NavLink>
-        <NavLink to={env ? '/locations' : '/shopia/locations'}>
-          Store Locations
-        </NavLink>
+        <NavLink to={linkTo('/searchterms')}>Search Terms</NavLink>
+        <NavLink to={linkTo('/ordersandreturns')}>Orders and Returns</NavLink>
+        <NavLink to={linkTo('/contact')}>Contact us</NavLink>
+        <NavLink to={linkTo('/rss')}>RSS</NavLink>
+        <NavLink to={linkTo('/faq')}>Help & FAQ's</NavLink>
+        <NavLink to={linkTo('/consultant')}>Consultant</NavLink>
+        <NavLink to={linkTo('/locations')}>Store Locations</NavLink>
       </div>
       <div>
         <h3>Stay Connected</h3>

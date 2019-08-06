@@ -1,5 +1,7 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 
-export default function App() {
-  return <Fragment></Fragment>;
+import {NotFound} from '../styles';
+
+export default function About() {
+  return <NotFound>404, page not found</NotFound>;
 }

@@ -17,13 +17,20 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html, body, .container {
+  html {
+    overflow-y: overlay
+    
+  }
+
+  html, body {
     min-height: 100vh;
   }
 
   body {  
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -32,6 +39,8 @@ export const Container = styled.div`
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  min-height: 100vh;
 `;
 
 export const Line = styled.div`
@@ -42,8 +51,14 @@ export const Line = styled.div`
 `;
 
 export const Star = styled.div`
-  height: 0.7rem;
-  width: 1.7rem;
+  min-width: 0.75rem;
+  min-height: 0.75rem;
   background-color: ${props => props.color || '#d9bf8f'};
   transform: rotate(45deg);
+`;
+
+export const NotFound = styled.div`
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
 `;

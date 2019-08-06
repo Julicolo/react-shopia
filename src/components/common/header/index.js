@@ -1,6 +1,8 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
+import {linkTo} from '../../../helpers';
+
 import {Currencies} from '../../../data/currencies';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -14,8 +16,6 @@ import {
   Menu,
   CurrencyButton,
 } from './styles';
-
-const env = process.env.NODE_ENV === 'development' ? true : false;
 
 export default function Header() {
   return (
@@ -34,15 +34,13 @@ export default function Header() {
       </TopBar>
       <Menu>
         <nav>
-          <NavLink to={env ? '/' : '/shopia/'} exact>
+          <NavLink to={linkTo('/')} exact>
             Home
           </NavLink>
-          <NavLink to={env ? '/collections' : '/shopia/collections'}>
-            Browse Collections
-          </NavLink>
-          <NavLink to={env ? '/about' : '/shopia/about'}>About Us</NavLink>
+          <NavLink to={linkTo('/collections')}>Browse Collections</NavLink>
+          <NavLink to={linkTo('/about')}>About Us</NavLink>
         </nav>
-        <NavLink to={env ? '/' : '/shopia/'} exact className="title">
+        <NavLink to={linkTo('/')} exact className="title">
           Shophia
         </NavLink>
         <ButtonsContainer>
@@ -50,7 +48,7 @@ export default function Header() {
             href="https://www.facebook.com"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#d9bf8f'}
+            color="#d9bf8f"
           >
             <FontAwesomeIcon icon={['fab', 'facebook-f']} />
           </SocialMediaButton>
@@ -58,7 +56,7 @@ export default function Header() {
             href="https://www.twitter.com"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#d9bf8f'}
+            color="#d9bf8f"
           >
             <FontAwesomeIcon icon={['fab', 'twitter']} />
           </SocialMediaButton>
@@ -66,7 +64,7 @@ export default function Header() {
             href="https://www.pinterest.com/"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#d9bf8f'}
+            color="#d9bf8f"
           >
             <FontAwesomeIcon icon={['fab', 'pinterest']} />
           </SocialMediaButton>
@@ -74,7 +72,7 @@ export default function Header() {
             href="https://www.instagram.com"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#d9bf8f'}
+            color="#d9bf8f"
           >
             <FontAwesomeIcon icon={['fab', 'instagram']} />
           </SocialMediaButton>

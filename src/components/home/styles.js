@@ -7,6 +7,7 @@ export const Main = styled.main`
   align-items: center;
   margin: 0 5rem;
   max-width: 80rem;
+  flex-grow: 1;
 `;
 
 export const StripedHeading = styled.div`

@@ -3,8 +3,8 @@ import React, {Fragment} from 'react';
 import Banner from './banner/';
 import Brands from '../common/brands';
 import Services from '../common/services';
-import SummerCollection from '../collections/summer';
 import ReviewBanner from './reviewbanner';
+import SummerCollection from '../collections/summer';
 
 import {CollectionContainer, BaseContainer} from '../collections/styles';
 import {Line, Star} from '../styles';
