@@ -1,16 +1,13 @@
 import styled from 'styled-components';
 
 export const StyledFooter = styled.footer`
-  background-color: #0f0f0f;
-  color: lightgrey;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 0 calc((100% - 80rem) / 2);
+  justify-content: space-evenly;
   flex-shrink: 0;
   width: 100%;
+  border-top: 1px solid #1cc01c;
   h3 {
-    color: white;
     margin: 3rem 0;
   }
   a {

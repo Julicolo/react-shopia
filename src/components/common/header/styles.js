@@ -8,13 +8,12 @@ export const StyledHeader = styled.header`
 `;
 
 export const TopBar = styled.div`
-  background: rgba(240, 240, 240);
-  padding: 0 calc((100% - 80rem) / 2);
   height: 3rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+
   & span {
     font: 1rem system-ui;
     padding: 0 2rem;
@@ -22,7 +21,7 @@ export const TopBar = styled.div`
 `;
 
 export const UserOptions = styled.div`
-  & button:not(:last-child) {
+  & button {
     padding: 0 2rem;
   }
   & button:last-child {
@@ -36,27 +35,26 @@ export const ButtonsContainer = styled.div`
   align-items: center;
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   border: none;
-  border-left: 1px solid black;
-  background: rgba(240, 240, 240);
-  font-size: 1rem;
+  border-right: 1px solid black;
+  background: #222;
+  font-size: 1.2rem;
   outline: none;
+  padding: 0 1rem;
 `;
 
 export const Menu = styled.div`
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  height: 8rem;
-  padding: 0 calc((100% - 80rem) / 2);
+  height: 6rem;
   & .title {
     font-family: 'Krinkes';
     font-size: 5rem;
     margin: 1rem 0;
     text-decoration: none;
-    color: black;
   }
   & nav {
     display: flex;
@@ -67,26 +65,21 @@ export const Menu = styled.div`
       font-family: 'PlayfairDisplay';
       font-size: 1.25rem;
       text-decoration: none;
-      color: black;
     }
     & a:not(:last-child) {
       margin-right: 2rem;
     }
   }
-  @media (max-width: 1250px) {
-    margin: 0 1rem;
-  }
 `;
 
 export const CurrencyButton = styled.select`
-  background-color: black;
-  color: white;
+  background-color: #222;
+  color: #1cc01c;
+  border: none;
   height: 2rem;
   width: 4.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align-last: center;
   outline: none;
-  border: none;
-  border-radius: 1rem;
-  margin-left: 5rem;
+  margin-left: 1rem;
 `;

@@ -12,10 +12,10 @@ export default function Footer() {
   return (
     <StyledFooter>
       <div>
-        <h3>Shops</h3>
-        <NavLink to={linkTo('/new')}>New</NavLink>
-        <NavLink to={linkTo('/sales')}>Sales</NavLink>
-        <NavLink to={linkTo('/women')}>Women</NavLink>
+        <h3>Pages</h3>
+        <NavLink to={linkTo('/')}>Home</NavLink>
+        <NavLink to={linkTo('/consoles')}>Consoles</NavLink>
+        <NavLink to={linkTo('/games')}>Games</NavLink>
         <NavLink to={linkTo('/men')}>Men</NavLink>
         <NavLink to={linkTo('/shoes')}>Shoes</NavLink>
         <NavLink to={linkTo('/topbrands')}>Top Brands</NavLink>
@@ -32,23 +32,13 @@ export default function Footer() {
         <NavLink to={linkTo('/terms')}>Terms & Conditions</NavLink>
       </div>
       <div>
-        <h3>Customer Service</h3>
-        <NavLink to={linkTo('/searchterms')}>Search Terms</NavLink>
-        <NavLink to={linkTo('/ordersandreturns')}>Orders and Returns</NavLink>
-        <NavLink to={linkTo('/contact')}>Contact us</NavLink>
-        <NavLink to={linkTo('/rss')}>RSS</NavLink>
-        <NavLink to={linkTo('/faq')}>Help & FAQ's</NavLink>
-        <NavLink to={linkTo('/consultant')}>Consultant</NavLink>
-        <NavLink to={linkTo('/locations')}>Store Locations</NavLink>
-      </div>
-      <div>
         <h3>Stay Connected</h3>
         <div className="socialcontainer">
           <SocialMediaButton
             href="https://www.facebook.com"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#0f0f0f'}
+            color={'#1cc01c'}
           >
             <FontAwesomeIcon icon={['fab', 'facebook-f']} />
           </SocialMediaButton>
@@ -56,7 +46,7 @@ export default function Footer() {
             href="https://www.twitter.com"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#0f0f0f'}
+            color={'#1cc01c'}
           >
             <FontAwesomeIcon icon={['fab', 'twitter']} />
           </SocialMediaButton>
@@ -64,7 +54,7 @@ export default function Footer() {
             href="https://www.pinterest.com/"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#0f0f0f'}
+            color={'#1cc01c'}
           >
             <FontAwesomeIcon icon={['fab', 'pinterest']} />
           </SocialMediaButton>
@@ -72,14 +62,10 @@ export default function Footer() {
             href="https://www.instagram.com"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#0f0f0f'}
+            color={'#1cc01c'}
           >
             <FontAwesomeIcon icon={['fab', 'instagram']} />
           </SocialMediaButton>
-        </div>
-        <div>
-          <h3>Subscribe to our news letter</h3>
-          <form></form>
         </div>
       </div>
     </StyledFooter>

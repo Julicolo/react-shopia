@@ -1,9 +1,7 @@
 import React, {Fragment} from 'react';
 
-import Banner from './banner/';
 import Brands from '../common/brands';
 import Services from '../common/services';
-import ReviewBanner from './reviewbanner';
 import SwitchGames from '../products';
 
 import {CollectionContainer, BaseContainer} from '../products/styles';
@@ -35,57 +33,89 @@ export default function App() {
   return (
     <Fragment>
       <Main>
-        <Banner />
-        <Services />
-        <StripedHeading>
-          {lineStarRight}
-          <h2>Upcoming Titles</h2>
-          {lineStarLeft}
-        </StripedHeading>
         <ImagesContainer>
+          <UpcomingReleasesContainer>
+            <UpcomingReleases>
+              <div>
+                <img
+                  src={require('../../images/highlighted/1.jpg')}
+                  alt="leather boots"
+                />
+                <img
+                  src={require('../../images/highlighted/2.jpg')}
+                  alt="leather & metal bracelet"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/highlighted/3.jpg')}
+                  alt="leather boots"
+                />
+                <img
+                  src={require('../../images/highlighted/4.jpg')}
+                  alt="leather & metal bracelet"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/highlighted/5.jpg')}
+                  alt="leather boots"
+                />
+                <img
+                  src={require('../../images/highlighted/6.jpg')}
+                  alt="leather & metal bracelet"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/highlighted/7.jpg')}
+                  alt="leather boots"
+                />
+                <img
+                  src={require('../../images/highlighted/8.jpg')}
+                  alt="leather & metal bracelet"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/highlighted/1.jpg')}
+                  alt="leather boots"
+                />
+                <img
+                  src={require('../../images/highlighted/2.jpg')}
+                  alt="leather & metal bracelet"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/highlighted/3.jpg')}
+                  alt="leather boots"
+                />
+                <img
+                  src={require('../../images/highlighted/4.jpg')}
+                  alt="leather & metal bracelet"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/highlighted/5.jpg')}
+                  alt="leather boots"
+                />
+                <img
+                  src={require('../../images/highlighted/6.jpg')}
+                  alt="leather & metal bracelet"
+                />
+              </div>
+            </UpcomingReleases>
+          </UpcomingReleasesContainer>
           <FeaturedImage>
             <img
-              src={require('../../images/highlighted/mid1.jpg')}
+              src={require('../../images/highlighted/big.jpg')}
               alt="Paris Hilton Collection"
             />
           </FeaturedImage>
-          <UpcomingReleasesContainer>
-            <UpcomingReleases>
-              <img
-                src={require('../../images/highlighted/left1.jpg')}
-                alt="leather boots"
-              />
-              <img
-                src={require('../../images/highlighted/left2.jpg')}
-                alt="leather & metal bracelet"
-              />{' '}
-              <img
-                src={require('../../images/highlighted/left3.jpg')}
-                alt="leather boots"
-              />
-              <img
-                src={require('../../images/highlighted/left4.jpg')}
-                alt="leather & metal bracelet"
-              />
-              <img
-                src={require('../../images/highlighted/right1.jpg')}
-                alt="leather bracelet"
-              />
-              <img
-                src={require('../../images/highlighted/right2.jpg')}
-                alt="leather boots"
-              />
-              <img
-                src={require('../../images/highlighted/right3.jpg')}
-                alt="leather bracelet"
-              />
-              <img
-                src={require('../../images/highlighted/right4.jpg')}
-                alt="leather boots"
-              />
-            </UpcomingReleases>
-          </UpcomingReleasesContainer>
         </ImagesContainer>
+        <Services />
         <StripedHeading>
           {lineStarRight}
           <h2>Switch Games</h2>
@@ -102,13 +132,7 @@ export default function App() {
         <BaseContainer>
           <Brands className="brands" />
         </BaseContainer>
-        <StripedHeading>
-          {lineStarRight}
-          <h2>Customers say</h2>
-          {lineStarLeft}
-        </StripedHeading>
       </Main>
-      <ReviewBanner />
     </Fragment>
   );
 }

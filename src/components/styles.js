@@ -1,25 +1,8 @@
 import styled, {createGlobalStyle} from 'styled-components';
-import Krinkes from '../fonts/KrinkesDecorPERSONAL.ttf';
-import PlayfairDisplay from '../fonts/PlayfairDisplay-RegularItalic.ttf';
 
 export const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Krinkes';
-    src: url(${Krinkes});
-  }
-
-  @font-face {
-    font-family: 'PlayFairDisplay';
-    src: url(${PlayfairDisplay});
-  }
-
   * {
     box-sizing: border-box;
-  }
-
-  html {
-    overflow-y: overlay
-    
   }
 
   html, body {
@@ -31,7 +14,13 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     display: flex;
     flex-direction: column;
+    color: white;
   }
+  
+  a {
+    color: white;
+  }
+
 `;
 
 export const Container = styled.div`
@@ -41,19 +30,21 @@ export const Container = styled.div`
   align-items: center;
   height: 100%;
   min-height: 100vh;
+  min-width: 100%;
+  background-color: #222;
 `;
 
 export const Line = styled.div`
-  height: 1px;
+  height: 4px;
   width: 100%;
-  background-color: #e2e2e2;
+  background-color: #1cc01c;
   margin-${props => props.margin}: 3rem;
 `;
 
 export const Star = styled.div`
   min-width: 0.75rem;
   min-height: 0.75rem;
-  background-color: ${props => props.color || '#d9bf8f'};
+  background-color: ${props => props.color || '#1cc01c'};
   transform: rotate(45deg);
 `;
 

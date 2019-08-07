@@ -5,9 +5,9 @@ export const Main = styled.main`
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 5rem;
-  max-width: 80rem;
   flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
 `;
 
 export const StripedHeading = styled.div`
@@ -15,8 +15,8 @@ export const StripedHeading = styled.div`
   flex-flow: row nowrap;
   align-items: center;
   width: 100%;
+  margin-top: 3.2rem;
   & h2 {
-    font-family: 'PlayFairDisplay';
     width: 50%;
     text-align: center;
   }
@@ -25,25 +25,43 @@ export const StripedHeading = styled.div`
 export const ImagesContainer = styled.div`
   display: flex;
   width: 100%;
+  height: 620px;
+  background-color: #222;
+  align-items: flex-start;
+  overflow: hidden;
+  border-top: 3px solid #1cc01c;
+  padding: 3.2rem;
+  margin: 3.2rem 0;
 `;
 
 export const FeaturedImage = styled.div`
   display: flex;
+  margin-left: 3.2rem;
   & img {
-    max-width: 100%;
+    min-width: 100%;
     height: auto;
   }
 `;
 
+// buitenste
 export const UpcomingReleasesContainer = styled.div`
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  & img {
-    margin: 0.5rem;
-  }
+  height: 120%;
+  overflow-x: scroll;
+  overflow-y: hidden;
 `;
 
+// binneste
 export const UpcomingReleases = styled.div`
-  // xd
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  justify-content: space-evenly;
+  & img {
+    margin: 0 3.2rem 3.2rem 0;
+  }
+  & div {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 `;
