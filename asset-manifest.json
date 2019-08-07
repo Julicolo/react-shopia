@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/shopia/static/js/main.5ee60bdc.chunk.js",
-    "main.js.map": "/shopia/static/js/main.5ee60bdc.chunk.js.map",
+    "main.js": "/shopia/static/js/main.621008c8.chunk.js",
+    "main.js.map": "/shopia/static/js/main.621008c8.chunk.js.map",
     "runtime~main.js": "/shopia/static/js/runtime~main.f7574200.js",
     "runtime~main.js.map": "/shopia/static/js/runtime~main.f7574200.js.map",
     "static/js/2.8ab29d9e.chunk.js": "/shopia/static/js/2.8ab29d9e.chunk.js",
     "static/js/2.8ab29d9e.chunk.js.map": "/shopia/static/js/2.8ab29d9e.chunk.js.map",
     "index.html": "/shopia/index.html",
-    "precache-manifest.68041fe599f5954cf78b88738b1daa70.js": "/shopia/precache-manifest.68041fe599f5954cf78b88738b1daa70.js",
+    "precache-manifest.8c6258768d6b877584cd67f190eecefb.js": "/shopia/precache-manifest.8c6258768d6b877584cd67f190eecefb.js",
     "service-worker.js": "/shopia/service-worker.js",
     "static/media/1.jpg": "/shopia/static/media/1.9c675e0c.jpg",
     "static/media/2.jpg": "/shopia/static/media/2.05271126.jpg",
