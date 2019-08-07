@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/shopia/static/js/main.e2e72b20.chunk.js",
-    "main.js.map": "/shopia/static/js/main.e2e72b20.chunk.js.map",
+    "main.js": "/shopia/static/js/main.2ff86b28.chunk.js",
+    "main.js.map": "/shopia/static/js/main.2ff86b28.chunk.js.map",
     "runtime~main.js": "/shopia/static/js/runtime~main.f7574200.js",
     "runtime~main.js.map": "/shopia/static/js/runtime~main.f7574200.js.map",
-    "static/js/2.aa1409c1.chunk.js": "/shopia/static/js/2.aa1409c1.chunk.js",
-    "static/js/2.aa1409c1.chunk.js.map": "/shopia/static/js/2.aa1409c1.chunk.js.map",
+    "static/js/2.0d0fde4f.chunk.js": "/shopia/static/js/2.0d0fde4f.chunk.js",
+    "static/js/2.0d0fde4f.chunk.js.map": "/shopia/static/js/2.0d0fde4f.chunk.js.map",
     "index.html": "/shopia/index.html",
-    "precache-manifest.0928e73af895563a7a5ec97b9fe7a47d.js": "/shopia/precache-manifest.0928e73af895563a7a5ec97b9fe7a47d.js",
+    "precache-manifest.e4bc4e5db953e8f731c6cdaa19aac392.js": "/shopia/precache-manifest.e4bc4e5db953e8f731c6cdaa19aac392.js",
     "service-worker.js": "/shopia/service-worker.js",
     "static/media/1.jpg": "/shopia/static/media/1.9c675e0c.jpg",
     "static/media/2.jpg": "/shopia/static/media/2.05271126.jpg",
