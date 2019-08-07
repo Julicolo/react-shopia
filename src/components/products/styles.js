@@ -19,5 +19,6 @@ export const CollectionContainer = styled(BaseContainer)`
     min-width: 15%;
     margin: 0.5%;
     height: 20rem;
+    width: 200px;
   }
 `;

@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 
 import Brands from '../common/brands';
 import Services from '../common/services';
-import SwitchGames from '../products';
+import {SwitchGames, XboxOneGames, PS4Games} from '../products';
 
 import {CollectionContainer, BaseContainer} from '../products/styles';
 import {Line, Star} from '../styles';
@@ -130,7 +130,7 @@ export default function App() {
           {lineStarLeft}
         </StripedHeading>
         <CollectionContainer>
-          <SwitchGames />
+          <PS4Games />
         </CollectionContainer>
         <StripedHeading>
           {lineStarRight}
@@ -138,7 +138,7 @@ export default function App() {
           {lineStarLeft}
         </StripedHeading>
         <CollectionContainer>
-          <SwitchGames />
+          <XboxOneGames />
         </CollectionContainer>
         <StripedHeading>
           {lineStarRight}
