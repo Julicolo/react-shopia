@@ -16,6 +16,7 @@ import {
   faPhoneAlt,
   faPlane,
   faShoppingCart,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons';
 import {faLifeRing, faClock, faUser} from '@fortawesome/free-regular-svg-icons';
 import {
@@ -35,7 +36,8 @@ library.add(
   faClock,
   faLifeRing,
   faUser,
-  faShoppingCart
+  faShoppingCart,
+  faBars
 );
 
 export default class Shopia extends React.Component {

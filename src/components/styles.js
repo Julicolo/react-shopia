@@ -1,4 +1,5 @@
 import styled, {createGlobalStyle} from 'styled-components';
+import device from '../helpers';
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -35,9 +36,16 @@ export const Container = styled.div`
 
 export const Line = styled.div`
   height: 4px;
-  width: 100%;
+  width: 750px;
   background-color: #1cc01c;
-  margin-${props => props.margin}: 3rem;
+  margin-${props => props.margin}: .5rem;
+  @media ${device.laptopL} {
+    width: 500px;
+  }
+  @media ${device.laptop} {
+    width: 250px;
+  }
+
 `;
 
 export const Star = styled.div`

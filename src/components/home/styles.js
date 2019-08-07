@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import device from '../../helpers';
 
 export const Main = styled.main`
   display: flex;
@@ -30,6 +31,10 @@ export const ImagesContainer = styled.div`
   overflow: hidden;
   border-top: 3px solid #1cc01c;
   padding: 3rem 4rem;
+  @media ${device.tablet} {
+    padding: 1rem;
+    height: 50%;
+  }
 `;
 
 export const FeaturedImage = styled.div`
@@ -38,6 +43,9 @@ export const FeaturedImage = styled.div`
   & img {
     min-width: 100%;
     height: 563px;
+  }
+  @media ${device.tablet} {
+    display: none;
   }
 `;
 
@@ -61,5 +69,13 @@ export const UpcomingReleases = styled.div`
   & div {
     display: flex;
     flex-flow: column nowrap;
+  }
+  @media ${device.tablet} {
+    & img {
+      margin: 0 0.5rem 0.5rem 0;
+      width: 90%;
+      height: auto;
+      min-width: 120px;
+    }
   }
 `;
