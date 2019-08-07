@@ -41,6 +41,7 @@ export const Line = styled.div`
 `;
 
 export const Star = styled.div`
+  display: none;
   min-width: 0.75rem;
   min-height: 0.75rem;
   background-color: ${props => props.color || '#1cc01c'};

@@ -15,7 +15,6 @@ export const StripedHeading = styled.div`
   flex-flow: row nowrap;
   align-items: center;
   width: 100%;
-  margin-top: 3.2rem;
   & h2 {
     width: 50%;
     text-align: center;
@@ -25,21 +24,20 @@ export const StripedHeading = styled.div`
 export const ImagesContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 620px;
+  height: 660px;
   background-color: #222;
   align-items: flex-start;
   overflow: hidden;
   border-top: 3px solid #1cc01c;
-  padding: 3.2rem;
-  margin: 3.2rem 0;
+  padding: 3rem 4rem;
 `;
 
 export const FeaturedImage = styled.div`
   display: flex;
-  margin-left: 3.2rem;
+  margin-left: 2rem;
   & img {
     min-width: 100%;
-    height: auto;
+    height: 563px;
   }
 `;
 
@@ -58,7 +56,7 @@ export const UpcomingReleases = styled.div`
   height: 100%;
   justify-content: space-evenly;
   & img {
-    margin: 0 3.2rem 3.2rem 0;
+    margin: 0 3rem 3rem 0;
   }
   & div {
     display: flex;

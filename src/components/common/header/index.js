@@ -1,18 +1,11 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import {linkTo} from '../../../helpers';
-
 import {Currencies} from '../../../data/currencies';
 
-import {
-  StyledHeader,
-  TopBar,
-  UserOptions,
-  Button,
-  Menu,
-  CurrencyButton,
-} from './styles';
+import {StyledHeader, UserOptions, Menu, CurrencyButton} from './styles';
 
 export default function Header() {
   return (
@@ -24,17 +17,14 @@ export default function Header() {
           </NavLink>
           <NavLink to={linkTo('/games')}>Games</NavLink>
           <NavLink to={linkTo('/consoles')}>Consoles</NavLink>
-          <NavLink to={linkTo('/about')}>About Us</NavLink>
+          <NavLink to={linkTo('/about')}>About</NavLink>
         </nav>
         <NavLink to={linkTo('/')} exact className="title">
           Shopia
         </NavLink>
-        <TopBar>
-          <UserOptions>
-            <Button>My Account</Button>
-            <Button>My Wishlist</Button>
-            <Button>Login</Button>
-          </UserOptions>
+        <UserOptions>
+          <FontAwesomeIcon icon="shopping-cart" />
+          <FontAwesomeIcon icon={['far', 'user']} />
           <CurrencyButton>
             {Currencies.map(currency => {
               return (
@@ -44,7 +34,7 @@ export default function Header() {
               );
             })}
           </CurrencyButton>
-        </TopBar>
+        </UserOptions>
       </Menu>
     </StyledHeader>
   );

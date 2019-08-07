@@ -1,14 +1,17 @@
 ## Shopia
 
-Shopia is an online clothing store made in React<br>
-This project is for learning purposes.
+Shopia is an an online gaming store, for gamers.<br>
+This website is made in React<br>
+This project is for learning purposes, I do not own any of the images.
 
-### `Tools that I'm using for this project`
+### `Tools used in this project`
 
 [Styled Components](https://styled-components.com/)<br>
 [React Router](https://reacttraining.com/react-router/)<br>
 [ESLint](https://eslint.org/)<br>
-[Prettier](https://prettier.io/)
+[Prettier](https://prettier.io/)<br>
+[Webpack](https://webpack.js.org/)<br>
+[Babel](https://babeljs.io/)
 
 ## Available Scripts
 

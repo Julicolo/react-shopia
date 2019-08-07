@@ -6,7 +6,7 @@ export const StyledFooter = styled.footer`
   justify-content: space-evenly;
   flex-shrink: 0;
   width: 100%;
-  border-top: 1px solid #1cc01c;
+  border-top: 4px solid #1cc01c;
   h3 {
     margin: 3rem 0;
   }

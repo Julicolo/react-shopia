@@ -12,8 +12,12 @@ import {GlobalStyle, Container} from './styles';
 
 // FortAwesome SVG icons
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {faPhoneAlt, faPlane} from '@fortawesome/free-solid-svg-icons';
-import {faLifeRing, faClock} from '@fortawesome/free-regular-svg-icons';
+import {
+  faPhoneAlt,
+  faPlane,
+  faShoppingCart,
+} from '@fortawesome/free-solid-svg-icons';
+import {faLifeRing, faClock, faUser} from '@fortawesome/free-regular-svg-icons';
 import {
   faFacebookF,
   faTwitter,
@@ -29,7 +33,9 @@ library.add(
   faInstagram,
   faPlane,
   faClock,
-  faLifeRing
+  faLifeRing,
+  faUser,
+  faShoppingCart
 );
 
 export default class Shopia extends React.Component {
