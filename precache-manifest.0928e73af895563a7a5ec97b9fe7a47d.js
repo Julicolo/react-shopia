@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f54d57126dd2be28bd2a2bfb61e3b8bf",
+    "revision": "43665796ffdaa5454eaa3ffd9fc948b8",
     "url": "/shopia/index.html"
   },
   {
-    "revision": "2c46274682925978d67d",
-    "url": "/shopia/static/js/2.6b0694e9.chunk.js"
+    "revision": "60548105d7c98c25220f",
+    "url": "/shopia/static/js/2.aa1409c1.chunk.js"
   },
   {
-    "revision": "9ab2a3be4542e86fbf43",
-    "url": "/shopia/static/js/main.aa966c4b.chunk.js"
+    "revision": "9b549116965a4127f229",
+    "url": "/shopia/static/js/main.e2e72b20.chunk.js"
   },
   {
     "revision": "8b3a2397c8f9bdffb893",
@@ -66,18 +66,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2e9d197ad2dc9a5712ab6360650e6299",
     "url": "/shopia/static/media/CoM_NSMedium.2e9d197a.jpg"
-  },
-  {
-    "revision": "19a1796ea28e15633d244490c67873bd",
-    "url": "/shopia/static/media/ControlPS4Medium.19a1796e.jpg"
-  },
-  {
-    "revision": "edf27c4fda63466102a7391b9ad6ffdb",
-    "url": "/shopia/static/media/DarkPictures_MoM_Xone_PSMedium.edf27c4f.jpg"
-  },
-  {
-    "revision": "abb380ae1321166bd2c7973228ad8f6b",
-    "url": "/shopia/static/media/F12019PS4AnniversaryMedium.abb380ae.jpg"
   },
   {
     "revision": "9e48ab7ab28371c54b64d74cea5583dd",
@@ -148,16 +136,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/Spyro_PS_NSMedium.9127ac2e.jpg"
   },
   {
-    "revision": "5fa793b21b65b65a29edf8bf02492c6f",
-    "url": "/shopia/static/media/StandaardEditionPackshotMedium.5fa793b2.jpg"
-  },
-  {
     "revision": "47d285b2ba10a1bed83517a6ff622db7",
     "url": "/shopia/static/media/StandaardPS4Medium.47d285b2.jpg"
-  },
-  {
-    "revision": "923643e09f821a9682996a77d0e83d2c",
-    "url": "/shopia/static/media/TourdeFrance2019XONEMedium.923643e0.jpg"
   },
   {
     "revision": "94f064ffadd5e9edfa9ca7dd9a824102",
@@ -182,10 +162,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "340063e3ff523178c4b483c48365884c",
     "url": "/shopia/static/media/XboxOneHaloInfinitePackMedium.340063e3.jpg"
-  },
-  {
-    "revision": "bbc17c50d9fd48305dde5dfb9216c5d2",
-    "url": "/shopia/static/media/YGO Legacy of the Duelist SwitchMedium.bbc17c50.jpg"
   },
   {
     "revision": "b970f4a6d7926ad4f4d1198be6a4cc38",
