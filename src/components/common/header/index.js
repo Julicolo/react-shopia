@@ -27,7 +27,7 @@ export default function Header() {
           <NavLink to={linkTo('/about')}>About Us</NavLink>
         </nav>
         <NavLink to={linkTo('/')} exact className="title">
-          Gaming!
+          Shopia
         </NavLink>
         <TopBar>
           <UserOptions>

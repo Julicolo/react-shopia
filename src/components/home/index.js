@@ -118,7 +118,23 @@ export default function App() {
         <Services />
         <StripedHeading>
           {lineStarRight}
-          <h2>Switch Games</h2>
+          <h2>New Nintendo Switch Games</h2>
+          {lineStarLeft}
+        </StripedHeading>
+        <CollectionContainer>
+          <SwitchGames />
+        </CollectionContainer>
+        <StripedHeading>
+          {lineStarRight}
+          <h2>New PlayStation 4 Games</h2>
+          {lineStarLeft}
+        </StripedHeading>
+        <CollectionContainer>
+          <SwitchGames />
+        </CollectionContainer>
+        <StripedHeading>
+          {lineStarRight}
+          <h2>New Xbox One Games</h2>
           {lineStarLeft}
         </StripedHeading>
         <CollectionContainer>
