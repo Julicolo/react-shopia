@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47444d33134273843b9057b1b6a0871e",
+    "revision": "a807ce37bd890a3d81b0b90de2a9818b",
     "url": "/shopia/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/js/2.378e308b.chunk.js"
   },
   {
-    "revision": "a2c8642f14899413c913",
-    "url": "/shopia/static/js/main.f9368594.chunk.js"
+    "revision": "323cf6e1a7fdfac46a8b",
+    "url": "/shopia/static/js/main.c45351f5.chunk.js"
   },
   {
     "revision": "8b3a2397c8f9bdffb893",
