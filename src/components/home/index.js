@@ -4,30 +4,18 @@ import Brands from '../common/brands';
 import Services from '../common/services';
 import {SwitchGames, XboxOneGames, PS4Games} from '../products';
 
-import {CollectionContainer, BaseContainer} from '../products/styles';
-import {Line, Star} from '../styles';
+import {
+  CollectionContainer,
+  BaseContainer,
+  GamesWrapper,
+} from '../products/styles';
 import {
   Main,
-  StripedHeading,
   ImagesContainer,
   FeaturedImage,
   UpcomingReleasesContainer,
   UpcomingReleases,
 } from './styles';
-
-const lineStarRight = (
-  <Fragment>
-    <Line margin={'right'} />
-    <Star />
-  </Fragment>
-);
-
-const lineStarLeft = (
-  <Fragment>
-    <Star />
-    <Line margin={'left'} />
-  </Fragment>
-);
 
 export default function App() {
   return (
@@ -116,35 +104,25 @@ export default function App() {
           </FeaturedImage>
         </ImagesContainer>
         <Services />
-        <StripedHeading>
-          {lineStarRight}
+        <GamesWrapper>
           <h2>New Nintendo Switch Games</h2>
-          {lineStarLeft}
-        </StripedHeading>
-        <CollectionContainer>
-          <SwitchGames />
-        </CollectionContainer>
-        <StripedHeading>
-          {lineStarRight}
+          <CollectionContainer>
+            <SwitchGames />
+          </CollectionContainer>
+        </GamesWrapper>
+        <GamesWrapper>
           <h2>New PlayStation 4 Games</h2>
-          {lineStarLeft}
-        </StripedHeading>
-        <CollectionContainer>
-          <PS4Games />
-        </CollectionContainer>
-        <StripedHeading>
-          {lineStarRight}
+          <CollectionContainer>
+            <PS4Games />
+          </CollectionContainer>
+        </GamesWrapper>
+        <GamesWrapper>
           <h2>New Xbox One Games</h2>
-          {lineStarLeft}
-        </StripedHeading>
-        <CollectionContainer>
-          <XboxOneGames />
-        </CollectionContainer>
-        <StripedHeading>
-          {lineStarRight}
-          <h2>Our Brands</h2>
-          {lineStarLeft}
-        </StripedHeading>
+          <CollectionContainer>
+            <XboxOneGames />
+          </CollectionContainer>
+        </GamesWrapper>
+        <h2>Our Brands</h2>
         <BaseContainer>
           <Brands className="brands" />
         </BaseContainer>

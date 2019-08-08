@@ -6,7 +6,7 @@ export const ServicesContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  margin: 1rem 0 3rem;
+  margin: 1rem 0 4rem;
   @media (max-width: 850px) {
     flex-flow: column wrap;
   }

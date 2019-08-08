@@ -11,17 +11,6 @@ export const Main = styled.main`
   max-width: 100%;
 `;
 
-export const StripedHeading = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  width: 100%;
-  & h2 {
-    width: 50%;
-    text-align: center;
-  }
-`;
-
 export const ImagesContainer = styled.div`
   display: flex;
   width: 100%;
@@ -29,7 +18,6 @@ export const ImagesContainer = styled.div`
   background-color: #222;
   align-items: flex-start;
   overflow: hidden;
-  border-top: 3px solid #1cc01c;
   padding: 3rem 4rem;
   @media ${device.tablet} {
     padding: 1rem;
@@ -49,7 +37,6 @@ export const FeaturedImage = styled.div`
   }
 `;
 
-// buitenste
 export const UpcomingReleasesContainer = styled.div`
   display: flex;
   height: 120%;
@@ -57,7 +44,6 @@ export const UpcomingReleasesContainer = styled.div`
   overflow-y: hidden;
 `;
 
-// binneste
 export const UpcomingReleases = styled.div`
   display: flex;
   flex-flow: row nowrap;

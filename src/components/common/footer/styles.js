@@ -7,6 +7,7 @@ export const StyledFooter = styled.footer`
   flex-shrink: 0;
   width: 100%;
   border-top: 4px solid #1cc01c;
+  background-color: #171717;
   h3 {
     margin: 3rem 0;
   }

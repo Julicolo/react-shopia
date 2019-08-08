@@ -11,10 +11,11 @@ export default function Header() {
   return (
     <StyledHeader>
       <Menu>
-        <NavLink to={linkTo('/')} exact className="title">
+        <NavLink to={linkTo('/')} exact className="logo hidden">
           Shopia
         </NavLink>
-        <div
+        <FontAwesomeIcon
+          icon="bars"
           className="burger"
           onClick={() => {
             const nav = document.getElementById('nav');
@@ -23,10 +24,7 @@ export default function Header() {
               ? (nav.style.display = 'none')
               : (nav.style.display = 'flex');
           }}
-        >
-          <FontAwesomeIcon icon="bars" />
-          <span>Menu</span>
-        </div>
+        />
         <nav id="nav">
           <NavLink to={linkTo('/')} exact>
             Home
@@ -35,10 +33,13 @@ export default function Header() {
           <NavLink to={linkTo('/consoles')}>Consoles</NavLink>
           <NavLink to={linkTo('/about')}>About</NavLink>
         </nav>
+        <NavLink to={linkTo('/')} exact className="logo center">
+          Shopia
+        </NavLink>
         <UserOptions>
-          <FontAwesomeIcon icon="shopping-cart" />
           <FontAwesomeIcon icon={['far', 'user']} />
-          <CurrencyButton>
+          <FontAwesomeIcon icon="shopping-cart" />
+          {/* <CurrencyButton>
             {Currencies.map(currency => {
               return (
                 <option value={currency} key={currency}>
@@ -46,7 +47,7 @@ export default function Header() {
                 </option>
               );
             })}
-          </CurrencyButton>
+          </CurrencyButton> */}
         </UserOptions>
       </Menu>
     </StyledHeader>
