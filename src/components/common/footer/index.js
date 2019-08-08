@@ -38,7 +38,7 @@ export default function Footer() {
             href="https://www.facebook.com"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#1cc01c'}
+            color={'var(--main-color);'}
           >
             <FontAwesomeIcon icon={['fab', 'facebook-f']} />
           </SocialMediaButton>
@@ -46,7 +46,7 @@ export default function Footer() {
             href="https://www.twitter.com"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#1cc01c'}
+            color={'var(--main-color);'}
           >
             <FontAwesomeIcon icon={['fab', 'twitter']} />
           </SocialMediaButton>
@@ -54,7 +54,7 @@ export default function Footer() {
             href="https://www.pinterest.com/"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#1cc01c'}
+            color={'var(--main-color);'}
           >
             <FontAwesomeIcon icon={['fab', 'pinterest']} />
           </SocialMediaButton>
@@ -62,7 +62,7 @@ export default function Footer() {
             href="https://www.instagram.com"
             rel="noopener noreferrer"
             target="_blank"
-            color={'#1cc01c'}
+            color={'var(--main-color);'}
           >
             <FontAwesomeIcon icon={['fab', 'instagram']} />
           </SocialMediaButton>

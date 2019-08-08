@@ -5,7 +5,7 @@ import {ServicesContainer, ServiceCard} from './styles';
 export default function Services() {
   return (
     <ServicesContainer>
-      <ServiceCard className="left" bgcolor={'#1cc01c'}>
+      <ServiceCard className="left" bgcolor={'var(--main-color);'}>
         <FontAwesomeIcon icon="plane" style={{transform: 'rotate(-45deg)'}} />
         <div className="servicesText">
           <p>FREE SHIPPING</p>
@@ -19,7 +19,7 @@ export default function Services() {
           <p>Money Back Guarantee</p>
         </div>
       </ServiceCard>
-      <ServiceCard className="right" bgcolor={'#1cc01c'}>
+      <ServiceCard className="right" bgcolor={'var(--main-color);'}>
         <FontAwesomeIcon icon={['far', 'life-ring']} />
         <div className="servicesText">
           <p>24/7 SUPPORT</p>

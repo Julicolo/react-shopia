@@ -2,6 +2,10 @@ import styled, {createGlobalStyle} from 'styled-components';
 import device from '../helpers';
 
 export const GlobalStyle = createGlobalStyle`
+  :root {
+    --main-color: #1cc01c;
+  }
+
   * {
     box-sizing: border-box;
   }
@@ -16,7 +20,6 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     color: white;
-    overflow-y: overlay;
   }
   
   a {

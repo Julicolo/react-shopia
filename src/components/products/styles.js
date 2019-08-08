@@ -10,6 +10,19 @@ export const GamesWrapper = styled.div`
   :nth-child(2n + 1) {
     background-color: #171717;
   }
+  & h2 {
+    padding-bottom: 1%;
+    border-bottom: 4px solid var(--main-color);
+  }
+  @media ${device.laptopL} {
+    padding: 2rem 10%;
+  }
+  @media ${device.laptop} {
+    padding: 2rem 5%;
+  }
+  @media ${device.tablet} {
+    padding: 1rem 0;
+  }
 `;
 
 export const BaseContainer = styled.div`
@@ -35,11 +48,13 @@ export const CollectionContainer = styled(BaseContainer)`
     margin: 1.5rem;
     height: 18rem;
     width: 200px;
-  }
-  @media ${device.tablet} {
-    & img {
-      height: 9rem;
-      width: 100px;
+    @media ${device.tablet} {
+      height: auto;
+      max-width: 30%;
+      width: 25%;
+      margin: 1rem;
+    }
+    @media ${device.mobileL} {
       margin: 0.5rem;
     }
   }

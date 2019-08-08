@@ -94,6 +94,36 @@ export default function App() {
                   alt="leather & metal bracelet"
                 />
               </div>
+              <div>
+                <img
+                  src={require('../../images/highlighted/1.jpg')}
+                  alt="leather boots"
+                />
+                <img
+                  src={require('../../images/highlighted/2.jpg')}
+                  alt="leather & metal bracelet"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/highlighted/3.jpg')}
+                  alt="leather boots"
+                />
+                <img
+                  src={require('../../images/highlighted/4.jpg')}
+                  alt="leather & metal bracelet"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/highlighted/5.jpg')}
+                  alt="leather boots"
+                />
+                <img
+                  src={require('../../images/highlighted/6.jpg')}
+                  alt="leather & metal bracelet"
+                />
+              </div>
             </UpcomingReleases>
           </UpcomingReleasesContainer>
           <FeaturedImage>

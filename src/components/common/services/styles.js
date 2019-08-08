@@ -6,7 +6,6 @@ export const ServicesContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  margin: 1rem 0 4rem;
   @media (max-width: 850px) {
     flex-flow: column wrap;
   }
@@ -22,7 +21,7 @@ export const ServiceCard = styled.div`
   text-align: center;
   font-size: 1rem;
   position: relative;
-  height: 5rem;
+  height: 4rem;
   overflow: hidden;
   & svg {
     font-size: 2.25rem;
@@ -82,18 +81,18 @@ export const ServiceCard = styled.div`
       position: absolute;
       right: 0;
       bottom: 0;
-      border-top: 42px solid transparent;
-      border-bottom: 42px solid transparent;
-      border-right: 50px solid ${props => props.bgcolor || '#1cc01c'};
+      border-top: 32px solid transparent;
+      border-bottom: 32px solid transparent;
+      border-right: 50px solid ${props => props.bgcolor || 'var(--main-color);'};
     }
     ::after {
       content: '';
       position: absolute;
       left: 0;
       bottom: 0;
-      border-top: 42px solid transparent;
-      border-bottom: 42px solid transparent;
-      border-left: 50px solid ${props => props.bgcolor || '#1cc01c'};
+      border-top: 32px solid transparent;
+      border-bottom: 32px solid transparent;
+      border-left: 50px solid ${props => props.bgcolor || 'var(--main-color);'};
     }
     @media ${device.tablet} {
       width: 100%;

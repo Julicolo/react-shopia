@@ -6,12 +6,10 @@ export const StyledHeader = styled.header`
   flex-flow: column wrap;
   width: 100%;
   flex-shrink: 0;
-  border-bottom: 3px solid #1cc01c;
-  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--main-color);
   @media ${device.laptop} {
     & a.logo.active {
       font-size: 3rem;
-      margin-left: 2rem;
     }
   }
 `;
@@ -38,21 +36,18 @@ export const Menu = styled.div`
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  height: 6rem;
+  height: 5rem;
   font-size: 1.5rem;
   background-color: #171717;
   .burger {
     display: none;
   }
-  & .center {
-    display: none;
-  }
   & .logo {
-    font-size: 5rem;
+    font-size: 4rem;
     text-decoration: none;
   }
   & svg {
-    color: #1cc01c;
+    color: var(--main-color);
   }
   & nav {
     display: flex;
@@ -68,9 +63,6 @@ export const Menu = styled.div`
     }
   }
   @media ${device.tablet} {
-    & .hidden {
-      display: none;
-    }
     & nav {
       display: none;
       flex-flow: column wrap;
@@ -78,23 +70,16 @@ export const Menu = styled.div`
       position: relative;
       background-color: #222;
       width: 100%;
-      top: 115px;
+      top: 83px;
       position: absolute;
-      border-bottom: 4px solid #1cc01c;
+      border-bottom: 4px solid var(--main-color);
       & a {
         height: 3rem;
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-bottom: 1px solid #1cc01c;
-      }
-    }
-    & .burger,
-    .center {
-      display: block;
-      span {
-        margin: 0 1rem;
+        border-bottom: 1px solid var(--main-color);
       }
     }
   }
@@ -102,7 +87,7 @@ export const Menu = styled.div`
 
 export const CurrencyButton = styled.select`
   background-color: #222;
-  color: #1cc01c;
+  color: var(--main-color);
   border: none;
   height: 2rem;
   width: 4.5rem;

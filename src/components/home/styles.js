@@ -14,11 +14,11 @@ export const Main = styled.main`
 export const ImagesContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 660px;
+  height: 530px;
   background-color: #222;
   align-items: flex-start;
   overflow: hidden;
-  padding: 3rem 4rem;
+  padding: 3rem;
   @media ${device.tablet} {
     padding: 1rem;
     height: 50%;
@@ -30,7 +30,7 @@ export const FeaturedImage = styled.div`
   margin-left: 2rem;
   & img {
     min-width: 100%;
-    height: 563px;
+    height: 435px;
   }
   @media ${device.tablet} {
     display: none;
@@ -50,7 +50,8 @@ export const UpcomingReleases = styled.div`
   height: 100%;
   justify-content: space-evenly;
   & img {
-    margin: 0 3rem 3rem 0;
+    margin: 0 2rem 2rem 0;
+    max-height: 200px;
   }
   & div {
     display: flex;
