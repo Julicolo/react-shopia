@@ -37,6 +37,15 @@ export default function Header({toggleMenu, isMenuOpen}) {
         <UserOptions>
           <FontAwesomeIcon icon={['far', 'user']} />
           <FontAwesomeIcon icon="shopping-cart" />
+          <CurrencyButton>
+            {Currencies.map(currency => {
+              return (
+                <option value={currency} key={currency}>
+                  {currency}
+                </option>
+              );
+            })}
+          </CurrencyButton>
         </UserOptions>
       </Menu>
     </StyledHeader>

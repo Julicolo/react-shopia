@@ -49,9 +49,7 @@ export const NotFound = styled.div`
   justify-content: center;
   align-items: center;
   flex: 1 0 auto;
-  & span {
-    font-size: 1.25rem;
-  }
+  padding: 3rem;
   & a {
     margin: 0 0.25rem;
   }

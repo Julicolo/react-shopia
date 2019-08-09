@@ -23,6 +23,11 @@ export const UserOptions = styled.div`
   & svg {
     margin: 0 0.5rem;
   }
+  @media ${device.tabletS} {
+    select {
+      display: none;
+    }
+  }
 `;
 
 export const ButtonsContainer = styled.div`
@@ -68,6 +73,7 @@ export const Menu = styled.div`
     & .mobile.logo {
       display: block;
       user-select: none;
+      user-select: none;
     }
     & nav {
       display: none;
@@ -111,6 +117,7 @@ export const CurrencyButton = styled.select`
   height: 2rem;
   width: 4.5rem;
   font-size: 1.1rem;
+  text-align: center;
   text-align-last: center;
   outline: none;
 `;

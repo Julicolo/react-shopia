@@ -9,12 +9,12 @@ export default function PageNotFound() {
     <React.Fragment>
       <NotFound>
         <h1>Oopsie, a 404!</h1>
-        <span>Seems like you lost your shopping cart!</span>
-        <span>
+        <p>Seems like you lost your shopping cart!</p>
+        <p>
           Want to go back to the
           <NavLink to={linkTo('/')}>homepage</NavLink>
           and buy some stuff?
-        </span>
+        </p>
       </NotFound>
     </React.Fragment>
   );
