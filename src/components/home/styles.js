@@ -31,9 +31,9 @@ export const FeaturedImage = styled.div`
   & img {
     min-width: 100%;
     height: 435px;
-  }
-  @media ${device.tablet} {
-    display: none;
+    @media ${device.tabletL} {
+      display: none;
+    }
   }
 `;
 

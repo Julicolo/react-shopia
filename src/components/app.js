@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, withRouter} from 'react-router-dom';
 
 import Home from './home';
 import About from './about';
@@ -40,12 +40,29 @@ library.add(
   faBars
 );
 
-export default class Shopia extends React.Component {
+export default withRouter(props => <Shopia {...props} />);
+
+class Shopia extends React.Component {
+  state = {
+    isMenuOpen: false,
+  };
+
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) this.onRouteChange();
+  }
+
+  onRouteChange() {
+    this.setState({isMenuOpen: false});
+  }
+
   render() {
     return (
       <Container>
         <GlobalStyle />
-        <Header />
+        <Header
+          toggleMenu={() => this.setState({isMenuOpen: !this.state.isMenuOpen})}
+          isMenuOpen={this.state.isMenuOpen}
+        />
         <Switch>
           <Route exact path={linkTo('/')} component={Home} />
           <Route path={linkTo('/about')} component={About} />

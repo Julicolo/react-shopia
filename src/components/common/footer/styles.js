@@ -9,7 +9,7 @@ export const StyledFooter = styled.footer`
   border-top: 4px solid var(--main-color);
   background-color: #171717;
   h3 {
-    margin: 3rem 0;
+    margin: 2rem 0;
   }
   a {
     color: grey;

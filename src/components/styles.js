@@ -1,9 +1,9 @@
 import styled, {createGlobalStyle} from 'styled-components';
-import device from '../helpers';
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --main-color: #1cc01c;
+    // --main-color: #1cc01c;
+    --main-color: #4724a8;
   }
 
   * {
@@ -20,12 +20,16 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     color: white;
+    font-family: sans-serif;
   }
   
   a {
     color: white;
   }
 
+  .hidden {
+    display: none;    
+  }
 `;
 
 export const Container = styled.div`

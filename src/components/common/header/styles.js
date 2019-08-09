@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
   flex-shrink: 0;
   border-bottom: 3px solid var(--main-color);
   @media ${device.laptop} {
-    & a.logo.active {
+    & a.logo {
       font-size: 3rem;
     }
   }
@@ -39,12 +39,11 @@ export const Menu = styled.div`
   height: 5rem;
   font-size: 1.5rem;
   background-color: #171717;
-  .burger {
-    display: none;
-  }
   & .logo {
     font-size: 4rem;
+    font-weight: normal;
     text-decoration: none;
+    margin: 0;
   }
   & svg {
     color: var(--main-color);
@@ -62,7 +61,14 @@ export const Menu = styled.div`
       padding: 1rem;
     }
   }
-  @media ${device.tablet} {
+  @media ${device.tabletS} {
+    & .logo {
+      display: none;
+    }
+    & .mobile.logo {
+      display: block;
+      user-select: none;
+    }
     & nav {
       display: none;
       flex-flow: column wrap;
@@ -73,6 +79,9 @@ export const Menu = styled.div`
       top: 83px;
       position: absolute;
       border-bottom: 4px solid var(--main-color);
+      &.open {
+        display: flex;
+      }
       & a {
         height: 3rem;
         color: white;
@@ -81,6 +90,16 @@ export const Menu = styled.div`
         justify-content: center;
         border-bottom: 1px solid var(--main-color);
       }
+    }
+  }
+  @media (min-width: 650px) {
+    & nav {
+      .mobile {
+        display: none;
+      }
+    }
+    & .mobile {
+      display: none;
     }
   }
 `;
