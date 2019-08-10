@@ -2,8 +2,9 @@ import styled, {createGlobalStyle} from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    // --main-color: #1cc01c;
     --main-color: #4724a8;
+    --dark-black: #171717;
+    --light-black: #222;
   }
 
   * {
@@ -40,7 +41,7 @@ export const Container = styled.div`
   height: 100%;
   min-height: 100vh;
   min-width: 100%;
-  background-color: #222;
+  background-color: var(--light-black);
 `;
 
 export const NotFound = styled.div`

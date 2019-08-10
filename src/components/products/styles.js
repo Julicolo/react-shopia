@@ -7,12 +7,9 @@ export const GamesWrapper = styled.div`
   align-items: center;
   flex-flow: column wrap;
   padding: 3rem 15%;
+  background-color: var(--dark-black);
   :nth-child(2n + 1) {
-    background-color: #171717;
-  }
-  & h2 {
-    padding-bottom: 1%;
-    border-bottom: 4px solid var(--main-color);
+    background-color: var(--light-black);
   }
   @media ${device.laptopL} {
     padding: 2rem 10%;

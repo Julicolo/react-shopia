@@ -9,25 +9,31 @@ export const Main = styled.main`
   flex-grow: 1;
   width: 100%;
   max-width: 100%;
+  h2 {
+    padding-bottom: 1%;
+    margin-bottom: 0;
+    border-bottom: 4px solid var(--main-color);
+  }
 `;
 
 export const ImagesContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 530px;
+  height: 500px;
   background-color: #222;
   align-items: flex-start;
   overflow: hidden;
-  padding: 3rem;
+  padding: 2rem 3rem;
+  margin-bottom: 3rem;
   @media ${device.tablet} {
     padding: 1rem;
-    height: 50%;
+    height: 350px;
   }
 `;
 
 export const FeaturedImage = styled.div`
   display: flex;
-  margin-left: 2rem;
+  padding-left: 0.5rem;
   & img {
     min-width: 100%;
     height: 435px;
@@ -35,6 +41,17 @@ export const FeaturedImage = styled.div`
       display: none;
     }
   }
+`;
+
+export const GalleryNavigation = styled.div`
+  font-size: 2rem;
+  height: 100%;
+  width: 5rem;
+  margin-${props => props.margin}: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
 `;
 
 export const UpcomingReleasesContainer = styled.div`

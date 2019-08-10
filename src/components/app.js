@@ -17,6 +17,8 @@ import {
   faPlane,
   faShoppingCart,
   faBars,
+  faChevronRight,
+  faChevronLeft,
 } from '@fortawesome/free-solid-svg-icons';
 import {faLifeRing, faClock, faUser} from '@fortawesome/free-regular-svg-icons';
 import {
@@ -37,7 +39,9 @@ library.add(
   faLifeRing,
   faUser,
   faShoppingCart,
-  faBars
+  faBars,
+  faChevronRight,
+  faChevronLeft
 );
 
 export default withRouter(props => <Shopia {...props} />);

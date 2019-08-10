@@ -20,8 +20,8 @@ export const UserOptions = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  & svg {
-    margin: 0 0.5rem;
+  & > * {
+    margin: 0.5rem;
   }
   @media ${device.tabletS} {
     select {
@@ -43,7 +43,7 @@ export const Menu = styled.div`
   align-items: center;
   height: 5rem;
   font-size: 1.5rem;
-  background-color: #171717;
+  background-color: var(--dark-black);
   & .logo {
     font-size: 4rem;
     font-weight: normal;
@@ -58,7 +58,7 @@ export const Menu = styled.div`
     flex-flow: row wrap;
     padding: 0;
     position: relative;
-    background-color: #171717;
+    background-color: var(--dark-black);
     & a {
       list-style: none;
       font-size: 1.25rem;
@@ -78,9 +78,11 @@ export const Menu = styled.div`
     & nav {
       display: none;
       flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
       z-index: 3000;
       position: relative;
-      background-color: #222;
+      background-color: var(--light-black);
       width: 100%;
       top: 83px;
       position: absolute;
@@ -88,13 +90,18 @@ export const Menu = styled.div`
       &.open {
         display: flex;
       }
-      & a {
+      a {
         height: 3rem;
         color: white;
         display: flex;
-        align-items: center;
+        padding: 0.75rem;
+        width: 100%;
         justify-content: center;
-        border-bottom: 1px solid var(--main-color);
+        border-bottom: 1px solid white;
+        }
+        & select {
+          margin: 0.25rem 0;
+        }
       }
     }
   }
@@ -111,8 +118,8 @@ export const Menu = styled.div`
 `;
 
 export const CurrencyButton = styled.select`
-  background-color: #222;
-  color: var(--main-color);
+  background-color: var(--light-black);
+  color: white;
   border: none;
   height: 2rem;
   width: 4.5rem;

@@ -44,20 +44,16 @@ export const ServiceCard = styled.div`
       border-left: 37px solid ${props => props.bgcolor || 'black'};
       z-index: 2000;
     }
-    @media ${device.mobileL} {
-      padding-bottom: 5rem;
-    }
     @media ${device.tablet} {
       width: 100%;
       justify-content: center;
-      height: 135px;
       ::before {
         content: '';
         position: absolute;
         right: 0;
         bottom: 0px;
-        border-top: 8.5rem solid transparent;
-        border-bottom: 0px solid transparent;
+        border-top: 2rem solid transparent;
+        border-bottom: none;
         border-left: none;
         border-right: 10.8rem solid black;
       }
@@ -66,16 +62,25 @@ export const ServiceCard = styled.div`
         position: absolute;
         left: 0;
         bottom: 0;
-        border-top: 8.5rem solid transparent;
-        border-bottom: 0px solid transparent;
+        border-top: 2rem solid transparent;
+        border-bottom: none;
         border-right: none;
         border-left: 10.8rem solid black;
+      }
+    }
+    @media ${device.mobileL} {
+      width: 100%;
+      justify-content: center;
+      ::before {
+        border-top: 1rem solid transparent;
+      }
+      ::after {
+        border-top: 1rem solid transparent;
       }
     }
   }
   &.middle {
     width: 45%;
-    padding: 0 3rem;
     ::before {
       content: '';
       position: absolute;
@@ -97,14 +102,11 @@ export const ServiceCard = styled.div`
     @media ${device.tablet} {
       width: 100%;
       justify-content: center;
-      height: 10rem;
+      height: 4rem;
       ::before,
       ::after {
         display: none;
       }
-    }
-    @media ${device.mobileL} {
-      height: 5rem;
     }
   }
   &.right {
@@ -120,29 +122,34 @@ export const ServiceCard = styled.div`
     }
     @media ${device.tablet} {
       width: 100%;
-      height: 135px;
       justify-content: center;
       ::before {
         content: '';
         position: absolute;
         left: 0;
-        bottom: 0;
-        border-top: 0em solid transparent;
-        border-bottom: 8.5rem solid transparent;
-        border-left: 10.8rem solid black;
-        border-right: none;
+        top: 0;
+        bottom: auto;
+        border-top: 2rem solid black;
+        border-bottom: none;
+        border-left: none;
+        border-right: 10.8rem solid transparent;
       }
       ::after {
         content: '';
         position: absolute;
         right: 0;
-        bottom: 0;
-        border-top: 0em solid transparent;
-        border-bottom: 8.5rem solid transparent;
+        top: 0;
+        border-top: none;
+        border-bottom: 2rem solid transparent;
         border-right: 10.8rem solid black;
       }
-      @media ${device.mobileL} {
-        padding-top: 5rem;
+    }
+    @media ${device.mobileL} {
+      ::before {
+        border-top: 1rem solid black;
+      }
+      ::after {
+        border-bottom: 1rem solid transparent;
       }
     }
   }

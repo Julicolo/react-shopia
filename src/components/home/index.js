@@ -1,5 +1,7 @@
 import React, {Fragment} from 'react';
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
 import Brands from '../common/brands';
 import Services from '../common/services';
 import {SwitchGames, XboxOneGames, PS4Games} from '../products';
@@ -15,17 +17,38 @@ import {
   FeaturedImage,
   UpcomingReleasesContainer,
   UpcomingReleases,
+  GalleryNavigation,
 } from './styles';
 
 export default function App() {
   return (
     <Fragment>
       <Main>
+        <h2>Upcoming releases</h2>
         <ImagesContainer>
-          <UpcomingReleasesContainer>
+          <GalleryNavigation
+            margin={'right'}
+            onClick={() => {
+              const imageContainer = document.querySelector(
+                '.upcoming-releases-container'
+              );
+              const image = document.querySelector('.releases-image');
+              const imageStyles = window.getComputedStyle(image);
+              const imageMarginRight = imageStyles.getPropertyValue(
+                'margin-right'
+              );
+
+              imageContainer.scrollLeft -=
+                image.offsetWidth + parseInt(imageMarginRight);
+            }}
+          >
+            <FontAwesomeIcon icon="chevron-left" />
+          </GalleryNavigation>
+          <UpcomingReleasesContainer className="upcoming-releases-container">
             <UpcomingReleases>
               <div>
                 <img
+                  className="releases-image"
                   src={require('../../images/highlighted/1.jpg')}
                   alt="leather boots"
                 />
@@ -132,6 +155,24 @@ export default function App() {
               alt="Paris Hilton Collection"
             />
           </FeaturedImage>
+          <GalleryNavigation
+            margin={'left'}
+            onClick={() => {
+              const imageContainer = document.querySelector(
+                '.upcoming-releases-container'
+              );
+              const image = document.querySelector('.releases-image');
+              const imageStyles = window.getComputedStyle(image);
+              const imageMarginRight = imageStyles.getPropertyValue(
+                'margin-right'
+              );
+
+              imageContainer.scrollLeft +=
+                image.offsetWidth + parseInt(imageMarginRight);
+            }}
+          >
+            <FontAwesomeIcon icon="chevron-right" />
+          </GalleryNavigation>
         </ImagesContainer>
         <Services />
         <GamesWrapper>
