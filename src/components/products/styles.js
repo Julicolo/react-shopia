@@ -6,13 +6,14 @@ export const GamesWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  padding: 3rem 15%;
+  width: 100%;
+  padding: 3rem 10%;
   background-color: var(--dark-black);
   :nth-child(2n + 1) {
     background-color: var(--light-black);
   }
   @media ${device.laptopL} {
-    padding: 2rem 10%;
+    padding: 2rem 7.5%;
   }
   @media ${device.laptop} {
     padding: 2rem 5%;
