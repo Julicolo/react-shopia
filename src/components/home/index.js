@@ -10,20 +10,25 @@ import {BaseContainer, GamesWrapper} from '../products/styles';
 import {
   Main,
   ImagesContainer,
+  ImagesContainerSmall,
   FeaturedImage,
   HorizontalGalleryContainer,
   UpcomingReleases,
   GalleryNavigation,
+  ImageGallery,
 } from './styles';
 
 function renderImageArrays(obj) {
   const objectValues = Object.values(obj).map(value => {
     return (
       <img
-        className="upcoming-release-image"
         src={require(`../../${value.imagePath}`)}
         alt={value.description}
         key={value.name}
+        price={value.price}
+        onClick={event => {
+          console.log(event.target.getAttribute('price'));
+        }}
       />
     );
   });
@@ -73,7 +78,7 @@ export default function App() {
       <Main>
         <h2>Pre-Orders & Upcoming releases</h2>
         <ImagesContainer>
-          {makeGalleryArrowLeft('.upcoming-releases-container', '188')}
+          {makeGalleryArrowLeft('.upcoming-releases-container', '232')}
           <HorizontalGalleryContainer className="upcoming-releases-container">
             <UpcomingReleases>
               {renderImageArrays(Products.upcoming.games).map((arr, index) => (
@@ -87,50 +92,50 @@ export default function App() {
               alt="Featured upcoming  game"
             />
           </FeaturedImage>
-          {makeGalleryArrowRight('.upcoming-releases-container', '188')}
+          {makeGalleryArrowRight('.upcoming-releases-container', '232')}
         </ImagesContainer>
         <Services />
         <GamesWrapper>
           <h2>New Nintendo Switch Games</h2>
-          <ImagesContainer>
-            {makeGalleryArrowLeft('.switch-games-container', '188')}
+          <ImagesContainerSmall>
+            {makeGalleryArrowLeft('.switch-games-container', '182')}
             <HorizontalGalleryContainer className="switch-games-container">
-              <UpcomingReleases>
+              <ImageGallery>
                 {renderImageArrays(Products.switch.games).map((arr, index) => (
                   <div key={index}>{arr}</div>
                 ))}
-              </UpcomingReleases>
+              </ImageGallery>
             </HorizontalGalleryContainer>
-            {makeGalleryArrowRight('.switch-games-container', '188')}
-          </ImagesContainer>
+            {makeGalleryArrowRight('.switch-games-container', '182')}
+          </ImagesContainerSmall>
         </GamesWrapper>
         <GamesWrapper>
           <h2>New PlayStation 4 Games</h2>
-          <ImagesContainer>
-            {makeGalleryArrowLeft('.ps4-games-container', '188')}
+          <ImagesContainerSmall>
+            {makeGalleryArrowLeft('.ps4-games-container', '182')}
             <HorizontalGalleryContainer className="ps4-games-container">
-              <UpcomingReleases>
+              <ImageGallery>
                 {renderImageArrays(Products.ps4.games).map((arr, index) => (
                   <div key={index}>{arr}</div>
                 ))}
-              </UpcomingReleases>
+              </ImageGallery>
             </HorizontalGalleryContainer>
-            {makeGalleryArrowRight('.ps4-games-container', '188')}
-          </ImagesContainer>
+            {makeGalleryArrowRight('.ps4-games-container', '182')}
+          </ImagesContainerSmall>
         </GamesWrapper>
         <GamesWrapper>
           <h2>New Xbox One Games</h2>
-          <ImagesContainer>
-            {makeGalleryArrowLeft('.xbox1-games-container', '188')}
+          <ImagesContainerSmall>
+            {makeGalleryArrowLeft('.xbox1-games-container', '182')}
             <HorizontalGalleryContainer className="xbox1-games-container">
-              <UpcomingReleases>
+              <ImageGallery>
                 {renderImageArrays(Products.xbox1.games).map((arr, index) => (
                   <div key={index}>{arr}</div>
                 ))}
-              </UpcomingReleases>
+              </ImageGallery>
             </HorizontalGalleryContainer>
-            {makeGalleryArrowRight('.xbox1-games-container', '188')}
-          </ImagesContainer>
+            {makeGalleryArrowRight('.xbox1-games-container', '182')}
+          </ImagesContainerSmall>
         </GamesWrapper>
         <h2>Our Brands</h2>
         <BaseContainer>

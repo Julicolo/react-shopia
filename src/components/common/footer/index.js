@@ -16,18 +16,12 @@ export default function Footer() {
         <NavLink to={linkTo('/')}>Home</NavLink>
         <NavLink to={linkTo('/consoles')}>Consoles</NavLink>
         <NavLink to={linkTo('/games')}>Games</NavLink>
-        <NavLink to={linkTo('/men')}>Men</NavLink>
-        <NavLink to={linkTo('/shoes')}>Shoes</NavLink>
-        <NavLink to={linkTo('/topbrands')}>Top Brands</NavLink>
-        <NavLink to={linkTo('/Bags')}>Bags & Accesories</NavLink>
+        <NavLink to={linkTo('/shoes')}>Brands</NavLink>
       </div>
       <div>
         <h3>Information</h3>
         <NavLink to={linkTo('/about')}>About us</NavLink>
         <NavLink to={linkTo('/customerservice')}>Customer Service</NavLink>
-        <NavLink to={linkTo('/collections')}>Collections</NavLink>
-        <NavLink to={linkTo('/bestsellers')}>Best Sellers</NavLink>
-        <NavLink to={linkTo('/manufacturers')}>Manufacturers</NavLink>
         <NavLink to={linkTo('/privacypolicy')}>Privacy Policy</NavLink>
         <NavLink to={linkTo('/terms')}>Terms & Conditions</NavLink>
       </div>
@@ -35,6 +29,7 @@ export default function Footer() {
         <h3>Stay Connected</h3>
         <div className="socialcontainer">
           <SocialMediaButton
+            aria-label="Facebook"
             href="https://www.facebook.com"
             rel="noopener noreferrer"
             target="_blank"
@@ -43,6 +38,7 @@ export default function Footer() {
             <FontAwesomeIcon icon={['fab', 'facebook-f']} />
           </SocialMediaButton>
           <SocialMediaButton
+            aria-label="Twitter"
             href="https://www.twitter.com"
             rel="noopener noreferrer"
             target="_blank"
@@ -51,6 +47,7 @@ export default function Footer() {
             <FontAwesomeIcon icon={['fab', 'twitter']} />
           </SocialMediaButton>
           <SocialMediaButton
+            aria-label="Pinterest"
             href="https://www.pinterest.com/"
             rel="noopener noreferrer"
             target="_blank"
@@ -59,6 +56,7 @@ export default function Footer() {
             <FontAwesomeIcon icon={['fab', 'pinterest']} />
           </SocialMediaButton>
           <SocialMediaButton
+            aria-label="Instagram"
             href="https://www.instagram.com"
             rel="noopener noreferrer"
             target="_blank"

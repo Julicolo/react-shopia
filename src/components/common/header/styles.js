@@ -13,13 +13,18 @@ export const StyledHeader = styled.header`
     }
   }
 `;
-
+//  width: 125px;
+//  height: 175px;
+//}
 export const UserOptions = styled.div`
   height: 3rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  label {
+    display: none;
+  }
   & > * {
     margin: 0.5rem;
   }
@@ -51,6 +56,7 @@ export const Menu = styled.div`
     margin: 0;
   }
   & svg {
+    user-select: none;
     color: var(--main-color);
   }
   & nav {
@@ -59,6 +65,9 @@ export const Menu = styled.div`
     padding: 0;
     position: relative;
     background-color: var(--dark-black);
+    label {
+      display: none;
+    }
     & a {
       list-style: none;
       font-size: 1.25rem;
@@ -73,7 +82,6 @@ export const Menu = styled.div`
     & .mobile.logo {
       display: block;
       user-select: none;
-      user-select: none;
     }
     & nav {
       display: none;
@@ -87,6 +95,7 @@ export const Menu = styled.div`
       top: 83px;
       position: absolute;
       border-bottom: 4px solid var(--main-color);
+
       &.open {
         display: flex;
       }

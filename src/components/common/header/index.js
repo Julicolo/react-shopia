@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
+import ShoppingCart from '../../shoppingcart';
 import {linkTo} from '../../../helpers';
 import {Currencies} from '../../../data/currencies';
 
@@ -24,7 +25,12 @@ export default function Header({toggleMenu, isMenuOpen}) {
           <NavLink to={linkTo('/games')}>Games</NavLink>
           <NavLink to={linkTo('/consoles')}>Consoles</NavLink>
           <NavLink to={linkTo('/about')}>About</NavLink>
-          <CurrencyButton className="mobile">
+          <label htmlFor="currencies">Currencies</label>
+          <CurrencyButton
+            id="currencies"
+            className="mobile"
+            aria-label="Currency selector"
+          >
             {Currencies.map(currency => {
               return (
                 <option value={currency} key={currency}>
@@ -36,8 +42,9 @@ export default function Header({toggleMenu, isMenuOpen}) {
         </nav>
         <UserOptions>
           <FontAwesomeIcon icon={['far', 'user']} />
-          <FontAwesomeIcon icon="shopping-cart" />
-          <CurrencyButton>
+          <ShoppingCart />
+          <label htmlFor="currencies">Currencies</label>
+          <CurrencyButton id="currencies" aria-label="Currency selector">
             {Currencies.map(currency => {
               return (
                 <option value={currency} key={currency}>

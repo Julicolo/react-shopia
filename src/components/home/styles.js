@@ -13,21 +13,28 @@ export const Main = styled.main`
     padding-bottom: 1%;
     margin-bottom: 0;
     border-bottom: 4px solid var(--main-color);
+    @media ${device.mobileL} {
+      margin-left: 1rem;
+    }
   }
 `;
 
 export const ImagesContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 600px;
   align-items: flex-start;
   overflow: hidden;
   padding: 2rem 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   @media ${device.tablet} {
-    padding: 1rem;
+    padding: 1rem 0;
     height: 450px;
   }
+`;
+
+export const ImagesContainerSmall = styled(ImagesContainer)`
+  height: 500px;
 `;
 
 export const FeaturedImage = styled.div`
@@ -35,7 +42,7 @@ export const FeaturedImage = styled.div`
   padding-left: 1rem;
   & img {
     min-width: 100%;
-    height: 435px;
+    height: 535px;
     @media ${device.tabletL} {
       display: none;
     }
@@ -51,6 +58,10 @@ export const GalleryNavigation = styled.div`
   align-items: center;
   justify-content: center;
   user-select: none;
+  @media ${device.tabletS} {
+    margin-left: 0;
+    width: 3rem;
+  }
 `;
 
 export const HorizontalGalleryContainer = styled.div`
@@ -65,22 +76,29 @@ export const UpcomingReleases = styled.div`
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
-  & img {
+  img {
     margin: 0 2rem 2rem 0;
-    max-height: 200px;
-    height: 200px;
-    width: 155px;
+    height: 250px;
+    max-width: 100%;
   }
-  & div {
+  div {
     display: flex;
     flex-flow: row nowrap;
   }
   @media ${device.tablet} {
-    & img {
+    img {
       margin: 0 1rem 1rem 0;
-      height: auto;
-      min-height: 175px;
-      min-width: 125px;
     }
+  }
+  @media ${device.tabletS} {
+    img {
+    }
+  }
+`;
+
+export const ImageGallery = styled(UpcomingReleases)`
+  img {
+    width: 150px;
+    height: 200px;
   }
 `;
