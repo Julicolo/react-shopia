@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd108a3b447f340b92bc10a30919432b",
+    "revision": "e74ef635253f11b46050bc0350ad1ffb",
     "url": "/shopia/index.html"
   },
   {
-    "revision": "51b907b65ee48c6a80ac",
-    "url": "/shopia/static/js/2.d97265c5.chunk.js"
+    "revision": "9ce8552232a782aa62ff",
+    "url": "/shopia/static/js/2.3871dda1.chunk.js"
   },
   {
-    "revision": "3bb5c1cd0cd5fc4d382d",
-    "url": "/shopia/static/js/main.30d0773c.chunk.js"
+    "revision": "36cf0dfdc5974940c1bf",
+    "url": "/shopia/static/js/main.750cde61.chunk.js"
   },
   {
     "revision": "8b3a2397c8f9bdffb893",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "62e1c42651ad761b9e51940699eaec72",
     "url": "/shopia/static/media/1.62e1c426.jpg"
+  },
+  {
+    "revision": "8312d42f0c8a50f1f1e870ec61370366",
+    "url": "/shopia/static/media/1.8312d42f.jpeg"
   },
   {
     "revision": "9c675e0c2484dca5ff71c2166c14e482",
@@ -40,6 +44,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/10.48210462.jpg"
   },
   {
+    "revision": "4bf637584f1fdc1fa8fe51e5be546b77",
+    "url": "/shopia/static/media/10.4bf63758.jpeg"
+  },
+  {
     "revision": "4d1cd1050f2e604367af255ca7fa3a49",
     "url": "/shopia/static/media/10.4d1cd105.jpg"
   },
@@ -48,8 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/10.65ba5217.jpg"
   },
   {
+    "revision": "27192b9b59aee23199ac17de21f2e146",
+    "url": "/shopia/static/media/11.27192b9b.jpeg"
+  },
+  {
     "revision": "335ad6a27a7446efbf7e4b143e6f929b",
     "url": "/shopia/static/media/11.335ad6a2.jpg"
+  },
+  {
+    "revision": "337796226e29b2be3b5420ac7e5af7a3",
+    "url": "/shopia/static/media/11.33779622.jpeg"
   },
   {
     "revision": "996535accd645acf6dea28645f3041c5",
@@ -68,12 +84,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/12.34b1f244.jpg"
   },
   {
+    "revision": "486cd1f42e3cd07c718520494d8ac5ee",
+    "url": "/shopia/static/media/12.486cd1f4.jpeg"
+  },
+  {
     "revision": "6047de104e1a6fd4d2e938b157126a58",
     "url": "/shopia/static/media/12.6047de10.jpg"
   },
   {
     "revision": "60dc297d9a34783b087b5157f171b896",
     "url": "/shopia/static/media/12.60dc297d.jpg"
+  },
+  {
+    "revision": "8e0a34aa190a9a5b62beed154e90b607",
+    "url": "/shopia/static/media/12.8e0a34aa.jpeg"
   },
   {
     "revision": "dbdfcfd3a1f87653b26f6089b3741cd7",
@@ -88,6 +112,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/13.8971bc32.jpg"
   },
   {
+    "revision": "a0598f7ac0c1ad82ce845e616e5dc9c3",
+    "url": "/shopia/static/media/13.a0598f7a.jpeg"
+  },
+  {
     "revision": "adcbcf6e29f58f750297ba4b03449be3",
     "url": "/shopia/static/media/13.adcbcf6e.jpg"
   },
@@ -96,8 +124,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/13.d3088cef.jpg"
   },
   {
+    "revision": "1dd93d29f3c8769ab580f4913357d2ab",
+    "url": "/shopia/static/media/14.1dd93d29.jpeg"
+  },
+  {
     "revision": "2b5a6dd41e8fb24f574faebd97ecc69e",
     "url": "/shopia/static/media/14.2b5a6dd4.jpg"
+  },
+  {
+    "revision": "5b77fb7ad5d4807a8e4a586219f83732",
+    "url": "/shopia/static/media/14.5b77fb7a.jpeg"
   },
   {
     "revision": "923643e09f821a9682996a77d0e83d2c",
@@ -110,6 +146,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b455dd3a6bd3038c7485fa8d75f769c4",
     "url": "/shopia/static/media/14.b455dd3a.jpg"
+  },
+  {
+    "revision": "1d3178840b691c5551f053509f4abf40",
+    "url": "/shopia/static/media/15.1d317884.jpeg"
+  },
+  {
+    "revision": "21f4950131e12b8e0ff7c13a25c782d7",
+    "url": "/shopia/static/media/15.21f49501.jpeg"
   },
   {
     "revision": "2cc3a4e48b36f8c8de02e73e9c9e4843",
@@ -136,6 +180,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/16.26959668.jpg"
   },
   {
+    "revision": "7c337d78a19aa0bc078b0f3bff005288",
+    "url": "/shopia/static/media/16.7c337d78.jpeg"
+  },
+  {
     "revision": "a88626e52766876a30dde24d4ed36071",
     "url": "/shopia/static/media/16.a88626e5.jpg"
   },
@@ -144,8 +192,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/16.df41a93f.jpg"
   },
   {
+    "revision": "e4a6df71515b0feacc5fbef0995a1d62",
+    "url": "/shopia/static/media/16.e4a6df71.jpeg"
+  },
+  {
     "revision": "10dc39a0493e2562d103a1ef22815dc1",
     "url": "/shopia/static/media/17.10dc39a0.jpg"
+  },
+  {
+    "revision": "7bbf930dca8d45e1d00d185a1a1b0721",
+    "url": "/shopia/static/media/17.7bbf930d.jpeg"
+  },
+  {
+    "revision": "a79725e08ffd08f5533ba8540d095d62",
+    "url": "/shopia/static/media/17.a79725e0.jpeg"
   },
   {
     "revision": "dcde2247f761fc36e0f36b055eeb52b8",
@@ -168,6 +228,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/18.c014e943.jpg"
   },
   {
+    "revision": "c0e186789a7e4307628968d5128f9e03",
+    "url": "/shopia/static/media/18.c0e18678.jpeg"
+  },
+  {
     "revision": "dda5ce5a9202d49614ef69437b60e69a",
     "url": "/shopia/static/media/18.dda5ce5a.jpg"
   },
@@ -176,12 +240,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/18.e0e22af3.jpg"
   },
   {
+    "revision": "e62072153fde3656c387c405ec01e547",
+    "url": "/shopia/static/media/18.e6207215.jpeg"
+  },
+  {
     "revision": "0919698f9e04156b8634235ba4d6d9a9",
     "url": "/shopia/static/media/19.0919698f.jpg"
   },
   {
     "revision": "431a5af820f2e72f7acc8afae83a5892",
     "url": "/shopia/static/media/19.431a5af8.jpg"
+  },
+  {
+    "revision": "50e777c354f5a4b7d4b8b72f6f15d3c8",
+    "url": "/shopia/static/media/19.50e777c3.jpeg"
   },
   {
     "revision": "560d8d149e274b1a36b07d5d7b83d7ac",
@@ -204,12 +276,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/2.4125d6a2.jpg"
   },
   {
+    "revision": "b079ec3304d954ca050f28ba4dc1a7ce",
+    "url": "/shopia/static/media/2.b079ec33.jpeg"
+  },
+  {
     "revision": "edf27c4fda63466102a7391b9ad6ffdb",
     "url": "/shopia/static/media/2.edf27c4f.jpg"
   },
   {
     "revision": "0f7e30c20b1a1f451f9b949c30b5807f",
     "url": "/shopia/static/media/20.0f7e30c2.jpg"
+  },
+  {
+    "revision": "11e775cced04fffc07fb39d8ad5e4416",
+    "url": "/shopia/static/media/20.11e775cc.jpeg"
   },
   {
     "revision": "9d05a2fff71cae8e284011abeba6a074",
@@ -224,6 +304,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/20.be7c8717.jpg"
   },
   {
+    "revision": "1fa9c9f57fefb120ba002a639c5d7dac",
+    "url": "/shopia/static/media/21.1fa9c9f5.jpeg"
+  },
+  {
     "revision": "2db3352706e45f76c1e0949c9dc64344",
     "url": "/shopia/static/media/21.2db33527.jpg"
   },
@@ -236,6 +320,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/22.65faf8d0.jpg"
   },
   {
+    "revision": "88dd480efe37e5407770fd2a77d8516f",
+    "url": "/shopia/static/media/22.88dd480e.jpeg"
+  },
+  {
+    "revision": "c650a718d71b44d68b2ef11fe71adbfc",
+    "url": "/shopia/static/media/22.c650a718.jpeg"
+  },
+  {
     "revision": "ece59fbecf2dcba76ecaea96c890a2c7",
     "url": "/shopia/static/media/22.ece59fbe.jpg"
   },
@@ -244,8 +336,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/23.59dc06e4.jpg"
   },
   {
+    "revision": "ac48f84fe61f5536576e926c138ca0e7",
+    "url": "/shopia/static/media/23.ac48f84f.jpeg"
+  },
+  {
     "revision": "bbc17c50d9fd48305dde5dfb9216c5d2",
     "url": "/shopia/static/media/23.bbc17c50.jpg"
+  },
+  {
+    "revision": "22a7b487c5f582dffa649bd87b119210",
+    "url": "/shopia/static/media/24.22a7b487.jpeg"
   },
   {
     "revision": "392bce19d06c7079a4a6620c4c446eee",
@@ -254,6 +354,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "47d285b2ba10a1bed83517a6ff622db7",
     "url": "/shopia/static/media/24.47d285b2.jpg"
+  },
+  {
+    "revision": "a5b25e2b73d837e2ec58a462bd3f76db",
+    "url": "/shopia/static/media/24.a5b25e2b.jpeg"
+  },
+  {
+    "revision": "a05e17774d47cc50d0aeae0aee14b5c9",
+    "url": "/shopia/static/media/25.a05e1777.jpeg"
   },
   {
     "revision": "c0ea56c56c174b3ea3006c225283d170",
@@ -270,6 +378,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b970f4a6d7926ad4f4d1198be6a4cc38",
     "url": "/shopia/static/media/28.b970f4a6.jpg"
+  },
+  {
+    "revision": "0de5d8cdc9f8494df38ba6f7ba7c549e",
+    "url": "/shopia/static/media/3.0de5d8cd.jpeg"
   },
   {
     "revision": "48752843b7176ff3b7b41edd985d36b0",
@@ -292,6 +404,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/4.19a1796e.jpg"
   },
   {
+    "revision": "1cf9f4f3ee1a54edbc1cebafa371658d",
+    "url": "/shopia/static/media/4.1cf9f4f3.jpeg"
+  },
+  {
     "revision": "2e9d197ad2dc9a5712ab6360650e6299",
     "url": "/shopia/static/media/4.2e9d197a.jpg"
   },
@@ -302,6 +418,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "700a2813f2e152f67ab26c1c71953a01",
     "url": "/shopia/static/media/4.700a2813.jpg"
+  },
+  {
+    "revision": "03f5f70139202b9f3c678eeb8a3fadf2",
+    "url": "/shopia/static/media/5.03f5f701.jpeg"
   },
   {
     "revision": "43c4c07c030a63ad92128e93deca57eb",
@@ -320,6 +440,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/5.ef0a6cc1.jpg"
   },
   {
+    "revision": "4bb0dcf6cd492fd8d9674d767abf52fc",
+    "url": "/shopia/static/media/6.4bb0dcf6.jpeg"
+  },
+  {
     "revision": "4d77e2ff68e0403310d34fab25843d3d",
     "url": "/shopia/static/media/6.4d77e2ff.jpg"
   },
@@ -330,6 +454,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "859d72d169bea6ac42b256fa69f5c72b",
     "url": "/shopia/static/media/6.859d72d1.jpg"
+  },
+  {
+    "revision": "95261b5c3a260884e1ad8e22f698c06d",
+    "url": "/shopia/static/media/6.95261b5c.jpeg"
   },
   {
     "revision": "eecf2cab2739f094cec5ab1619d8681f",
@@ -344,12 +472,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/7.6486060c.jpg"
   },
   {
+    "revision": "a21a9100f74bd85d72a3de1cb64d5926",
+    "url": "/shopia/static/media/7.a21a9100.jpeg"
+  },
+  {
     "revision": "abb380ae1321166bd2c7973228ad8f6b",
     "url": "/shopia/static/media/7.abb380ae.jpg"
   },
   {
     "revision": "ce385979cf9be64fcf32a55d526b6933",
     "url": "/shopia/static/media/7.ce385979.jpg"
+  },
+  {
+    "revision": "926aadcaf0715fac600f45e97e16cd0c",
+    "url": "/shopia/static/media/8.926aadca.jpeg"
+  },
+  {
+    "revision": "94df583b61f0dbcb5773f0fcab41e22c",
+    "url": "/shopia/static/media/8.94df583b.jpeg"
   },
   {
     "revision": "9e48ab7ab28371c54b64d74cea5583dd",
@@ -372,8 +512,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopia/static/media/9.4f9ed41a.jpg"
   },
   {
+    "revision": "607faccfbb23308b1bca20b8a15502c8",
+    "url": "/shopia/static/media/9.607faccf.jpeg"
+  },
+  {
     "revision": "741a549c517932f8cbce10be0741040e",
     "url": "/shopia/static/media/9.741a549c.jpg"
+  },
+  {
+    "revision": "85a4e2377b9452a1c1aef5f516dc0663",
+    "url": "/shopia/static/media/9.85a4e237.jpeg"
   },
   {
     "revision": "9f96a7385e4e18ddf8ec5eb78ce16449",
@@ -398,5 +546,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0abaaee13230e1c623c9002b7d338535",
     "url": "/shopia/static/media/rockstar-games-logo-37BEDA8D5E-seeklogo.com.0abaaee1.png"
+  },
+  {
+    "revision": "853ead5ca2377d0bbbd507137d5ad3ac",
+    "url": "/shopia/static/media/x.853ead5c.jpeg"
   }
 ]);
