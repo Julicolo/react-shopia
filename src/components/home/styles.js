@@ -56,15 +56,15 @@ export const GalleryNavigation = styled.div`
 export const HorizontalGalleryContainer = styled.div`
   display: flex;
   height: 120%;
+  width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
 `;
 
 export const UpcomingReleases = styled.div`
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   height: 100%;
-  justify-content: space-evenly;
   & img {
     margin: 0 2rem 2rem 0;
     max-height: 200px;
@@ -73,7 +73,7 @@ export const UpcomingReleases = styled.div`
   }
   & div {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
   }
   @media ${device.tablet} {
     & img {

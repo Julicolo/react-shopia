@@ -2,6 +2,7 @@ import React, {Fragment} from 'react';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
+import {Products} from '../../data/products';
 import Brands from '../common/brands';
 import Services from '../common/services';
 
@@ -15,81 +16,56 @@ import {
   GalleryNavigation,
 } from './styles';
 
-function importAll(resolve) {
-  return resolve.keys().map(resolve);
+function renderImageArrays(obj) {
+  const objectValues = Object.values(obj).map(value => {
+    return (
+      <img
+        className="upcoming-release-image"
+        src={require(`../../${value.imagePath}`)}
+        alt={value.description}
+        key={value.name}
+      />
+    );
+  });
+
+  return objectValues.reduce(
+    (arr, image, index) => {
+      arr[index % 2 === 0 ? 0 : 1].push(image);
+      return arr;
+    },
+    [[], []]
+  );
 }
 
-const upcomingReleasesCollection = importAll(
-  require.context('../../images/games/upcoming', false, /\.(png|jpe?g|svg)$/)
-);
+function makeGalleryArrowLeft(targetContainer, scrollAmount) {
+  return (
+    <GalleryNavigation
+      margin={'right'}
+      onClick={() => {
+        const imageContainer = document.querySelector(targetContainer);
 
-const switchCollectionImages = importAll(
-  require.context('../../images/games/switch', false, /\.(png|jpe?g|svg)$/)
-);
+        imageContainer.scrollLeft -= scrollAmount;
+      }}
+    >
+      <FontAwesomeIcon icon="chevron-left" />
+    </GalleryNavigation>
+  );
+}
 
-const xboxOneCollectionImages = importAll(
-  require.context('../../images/games/xbox1', false, /\.(png|jpe?g|svg)$/)
-);
+function makeGalleryArrowRight(targetContainer, scrollAmount) {
+  return (
+    <GalleryNavigation
+      margin={'left'}
+      onClick={() => {
+        const imageContainer = document.querySelector(targetContainer);
 
-const playStation4CollectionImages = importAll(
-  require.context('../../images/games/ps4', false, /\.(png|jpe?g|svg)$/)
-);
-
-const upcomingGames = upcomingReleasesCollection.reduce(
-  (arr, path) => {
-    const lastPair = arr[arr.length - 1];
-    if (lastPair.length < 2) {
-      lastPair.push(path);
-    } else if (lastPair.length === 2) {
-      arr.push([path]);
-    }
-
-    return arr;
-  },
-  [[]]
-);
-
-const switchGames = switchCollectionImages.reduce(
-  (arr, path) => {
-    const lastPair = arr[arr.length - 1];
-    if (lastPair.length < 2) {
-      lastPair.push(path);
-    } else if (lastPair.length === 2) {
-      arr.push([path]);
-    }
-
-    return arr;
-  },
-  [[]]
-);
-
-const xboxOneGames = xboxOneCollectionImages.reduce(
-  (arr, path) => {
-    const lastPair = arr[arr.length - 1];
-    if (lastPair.length < 2) {
-      lastPair.push(path);
-    } else if (lastPair.length === 2) {
-      arr.push([path]);
-    }
-
-    return arr;
-  },
-  [[]]
-);
-
-const playstationGames = playStation4CollectionImages.reduce(
-  (arr, path) => {
-    const lastPair = arr[arr.length - 1];
-    if (lastPair.length < 2) {
-      lastPair.push(path);
-    } else if (lastPair.length === 2) {
-      arr.push([path]);
-    }
-
-    return arr;
-  },
-  [[]]
-);
+        imageContainer.scrollLeft += scrollAmount;
+      }}
+    >
+      <FontAwesomeIcon icon="chevron-right" />
+    </GalleryNavigation>
+  );
+}
 
 export default function App() {
   return (
@@ -97,29 +73,11 @@ export default function App() {
       <Main>
         <h2>Pre-Orders & Upcoming releases</h2>
         <ImagesContainer>
-          <GalleryNavigation
-            margin={'right'}
-            onClick={() => {
-              const imageContainer = document.querySelector(
-                '.upcoming-releases-container'
-              );
-
-              imageContainer.scrollLeft -= 188;
-            }}
-          >
-            <FontAwesomeIcon icon="chevron-left" />
-          </GalleryNavigation>
+          {makeGalleryArrowLeft('.upcoming-releases-container', '188')}
           <HorizontalGalleryContainer className="upcoming-releases-container">
             <UpcomingReleases>
-              {upcomingGames.map(([path1, path2]) => (
-                <div key={path1 + path2}>
-                  <img
-                    className="upcoming-release-image"
-                    src={path1}
-                    alt={'Upcoming game' + path1}
-                  />
-                  <img src={path2} alt={'Upcoming game' + path2} />
-                </div>
+              {renderImageArrays(Products.upcoming.games).map(arr => (
+                <div>{arr}</div>
               ))}
             </UpcomingReleases>
           </HorizontalGalleryContainer>
@@ -129,135 +87,49 @@ export default function App() {
               alt="Featured upcoming  game"
             />
           </FeaturedImage>
-          <GalleryNavigation
-            margin={'left'}
-            onClick={() => {
-              const imageContainer = document.querySelector(
-                '.upcoming-releases-container'
-              );
-
-              imageContainer.scrollLeft += 188;
-            }}
-          >
-            <FontAwesomeIcon icon="chevron-right" />
-          </GalleryNavigation>
+          {makeGalleryArrowRight('.upcoming-releases-container', '188')}
         </ImagesContainer>
         <Services />
         <GamesWrapper>
           <h2>New Nintendo Switch Games</h2>
           <ImagesContainer>
-            <GalleryNavigation
-              margin={'right'}
-              onClick={() => {
-                const imageContainer = document.querySelector(
-                  '.switch-games-container'
-                );
-
-                imageContainer.scrollLeft -= 188;
-              }}
-            >
-              <FontAwesomeIcon icon="chevron-left" />
-            </GalleryNavigation>
+            {makeGalleryArrowLeft('.switch-games-container', '188')}
             <HorizontalGalleryContainer className="switch-games-container">
               <UpcomingReleases>
-                {switchGames.map(([path1, path2]) => (
-                  <div key={path1 + path2}>
-                    <img src={path1} alt={'Nintendo switch game' + path1} />
-                    <img src={path2} alt={'Nintendo switch game' + path2} />
-                  </div>
-                ))}
+                {/*renderImageArrays(Products.switch.games).map(arr => (
+                  <div>{arr}</div>
+                ))*/}
               </UpcomingReleases>
             </HorizontalGalleryContainer>
-            <GalleryNavigation
-              margin={'left'}
-              onClick={() => {
-                const imageContainer = document.querySelector(
-                  '.switch-games-container'
-                );
-
-                imageContainer.scrollLeft += 188;
-              }}
-            >
-              <FontAwesomeIcon icon="chevron-right" />
-            </GalleryNavigation>
+            {makeGalleryArrowRight('.switch-games-container', '188')}
           </ImagesContainer>
         </GamesWrapper>
         <GamesWrapper>
           <h2>New PlayStation 4 Games</h2>
           <ImagesContainer>
-            <GalleryNavigation
-              margin={'right'}
-              onClick={() => {
-                const imageContainer = document.querySelector(
-                  '.ps4-games-container'
-                );
-
-                imageContainer.scrollLeft -= 188;
-              }}
-            >
-              <FontAwesomeIcon icon="chevron-left" />
-            </GalleryNavigation>
+            {makeGalleryArrowLeft('.ps4-games-container', '188')}
             <HorizontalGalleryContainer className="ps4-games-container">
               <UpcomingReleases>
-                {playstationGames.map(([path1, path2]) => (
-                  <div key={path1 + path2}>
-                    <img src={path1} alt={'Playstation 4 game' + path1} />
-                    <img src={path2} alt={'Playstation 4 game' + path2} />
-                  </div>
-                ))}
+                {/*renderImageArrays(Products.ps4.games).map(arr => (
+                  <div>{arr}</div>
+                ))*/}
               </UpcomingReleases>
             </HorizontalGalleryContainer>
-            <GalleryNavigation
-              margin={'left'}
-              onClick={() => {
-                const imageContainer = document.querySelector(
-                  '.ps4-games-container'
-                );
-
-                imageContainer.scrollLeft += 188;
-              }}
-            >
-              <FontAwesomeIcon icon="chevron-right" />
-            </GalleryNavigation>
+            {makeGalleryArrowRight('.ps4-games-container', '188')}
           </ImagesContainer>
         </GamesWrapper>
         <GamesWrapper>
           <h2>New Xbox One Games</h2>
           <ImagesContainer>
-            <GalleryNavigation
-              margin={'right'}
-              onClick={() => {
-                const imageContainer = document.querySelector(
-                  '.xbox1-games-container'
-                );
-
-                imageContainer.scrollLeft -= 188;
-              }}
-            >
-              <FontAwesomeIcon icon="chevron-left" />
-            </GalleryNavigation>
+            {makeGalleryArrowLeft('.xbox1-games-container', '188')}
             <HorizontalGalleryContainer className="xbox1-games-container">
               <UpcomingReleases>
-                {xboxOneGames.map(([path1, path2]) => (
-                  <div key={path1 + path2}>
-                    <img src={path1} alt={'Xbox One game' + path1} />
-                    <img src={path2} alt={'Xbox One game' + path2} />
-                  </div>
-                ))}
+                {/*renderImageArrays(Products.xbox1.games).map(arr => (
+                  <div>{arr}</div>
+                ))*/}
               </UpcomingReleases>
             </HorizontalGalleryContainer>
-            <GalleryNavigation
-              margin={'left'}
-              onClick={() => {
-                const imageContainer = document.querySelector(
-                  '.xbox1-games-container'
-                );
-
-                imageContainer.scrollLeft += 188;
-              }}
-            >
-              <FontAwesomeIcon icon="chevron-right" />
-            </GalleryNavigation>
+            {makeGalleryArrowRight('.xbox1-games-container', '188')}
           </ImagesContainer>
         </GamesWrapper>
         <h2>Our Brands</h2>
