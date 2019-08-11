@@ -7,16 +7,16 @@ export const GamesWrapper = styled.div`
   align-items: center;
   flex-flow: column wrap;
   width: 100%;
-  padding: 3rem 10%;
+  padding: 3rem 9%;
   background-color: var(--dark-black);
   :nth-child(2n + 1) {
     background-color: var(--light-black);
   }
   @media ${device.laptopL} {
-    padding: 2rem 7.5%;
+    padding: 2rem 4.5%;
   }
   @media ${device.laptop} {
-    padding: 2rem 5%;
+    padding: 2rem 1.5%;
   }
   @media ${device.tablet} {
     padding: 1rem 0;

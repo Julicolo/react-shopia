@@ -76,8 +76,8 @@ export default function App() {
           {makeGalleryArrowLeft('.upcoming-releases-container', '188')}
           <HorizontalGalleryContainer className="upcoming-releases-container">
             <UpcomingReleases>
-              {renderImageArrays(Products.upcoming.games).map(arr => (
-                <div>{arr}</div>
+              {renderImageArrays(Products.upcoming.games).map((arr, index) => (
+                <div key={index}>{arr}</div>
               ))}
             </UpcomingReleases>
           </HorizontalGalleryContainer>
@@ -96,9 +96,9 @@ export default function App() {
             {makeGalleryArrowLeft('.switch-games-container', '188')}
             <HorizontalGalleryContainer className="switch-games-container">
               <UpcomingReleases>
-                {/*renderImageArrays(Products.switch.games).map(arr => (
-                  <div>{arr}</div>
-                ))*/}
+                {renderImageArrays(Products.switch.games).map((arr, index) => (
+                  <div key={index}>{arr}</div>
+                ))}
               </UpcomingReleases>
             </HorizontalGalleryContainer>
             {makeGalleryArrowRight('.switch-games-container', '188')}
@@ -110,9 +110,9 @@ export default function App() {
             {makeGalleryArrowLeft('.ps4-games-container', '188')}
             <HorizontalGalleryContainer className="ps4-games-container">
               <UpcomingReleases>
-                {/*renderImageArrays(Products.ps4.games).map(arr => (
-                  <div>{arr}</div>
-                ))*/}
+                {renderImageArrays(Products.ps4.games).map((arr, index) => (
+                  <div key={index}>{arr}</div>
+                ))}
               </UpcomingReleases>
             </HorizontalGalleryContainer>
             {makeGalleryArrowRight('.ps4-games-container', '188')}
@@ -124,9 +124,9 @@ export default function App() {
             {makeGalleryArrowLeft('.xbox1-games-container', '188')}
             <HorizontalGalleryContainer className="xbox1-games-container">
               <UpcomingReleases>
-                {/*renderImageArrays(Products.xbox1.games).map(arr => (
-                  <div>{arr}</div>
-                ))*/}
+                {renderImageArrays(Products.xbox1.games).map((arr, index) => (
+                  <div key={index}>{arr}</div>
+                ))}
               </UpcomingReleases>
             </HorizontalGalleryContainer>
             {makeGalleryArrowRight('.xbox1-games-container', '188')}
