@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a56a32e4b9fb6fc14c2af74b946ca20c",
+    "revision": "3f2ba2664b3d25998d0d5f47bf4112ad",
     "url": "/shopia/index.html"
   },
   {
-    "revision": "906e732ef8f901253d3d",
-    "url": "/shopia/static/js/2.ca9be8c7.chunk.js"
+    "revision": "053e2b9af35ac9266888",
+    "url": "/shopia/static/js/2.b6dc7e81.chunk.js"
   },
   {
-    "revision": "c3a5dde085c006db517b",
-    "url": "/shopia/static/js/main.3909c78d.chunk.js"
+    "revision": "d6075eed2ebc3363d3ee",
+    "url": "/shopia/static/js/main.f9498f24.chunk.js"
   },
   {
     "revision": "8b3a2397c8f9bdffb893",
