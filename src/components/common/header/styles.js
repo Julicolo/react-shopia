@@ -13,15 +13,14 @@ export const StyledHeader = styled.header`
     }
   }
 `;
-//  width: 125px;
-//  height: 175px;
-//}
+
 export const UserOptions = styled.div`
   height: 3rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   label {
     display: none;
   }

@@ -1,8 +1,8 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
 import ShoppingCart from '../../shoppingcart';
+
 import {linkTo} from '../../../helpers';
 import {Currencies} from '../../../data/currencies';
 
@@ -42,6 +42,7 @@ export default function Header({toggleMenu, isMenuOpen}) {
         </nav>
         <UserOptions>
           <FontAwesomeIcon icon={['far', 'user']} />
+          <FontAwesomeIcon icon="shopping-cart" />
           <ShoppingCart />
           <label htmlFor="currencies">Currencies</label>
           <CurrencyButton id="currencies" aria-label="Currency selector">
