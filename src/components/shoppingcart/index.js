@@ -8,16 +8,18 @@ export default function ShoppingCart() {
     <CartContext.Consumer>
       {cart => (
         <ShoppingCartSummary>
-          {console.log(cart)}
           <h2>{cart.cartItems.length || 'No'} items in cart</h2>
-          <ul>
+          <div className="item-container">
             {cart.cartItems.map((product, index) => (
-              <li>
-                {product.name}
-                <button onClick={() => cart.removeFromCart(index)}>X</button>
-              </li>
+              <div className="cart-product" key={index}>
+                <span>{product.name}</span>
+                <div className="cart-price-button">
+                  <span>{product.price}</span>
+                  <button onClick={() => cart.removeFromCart(index)}>X</button>
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
         </ShoppingCartSummary>
       )}
     </CartContext.Consumer>
@@ -30,8 +32,3 @@ export default function ShoppingCart() {
 // icon="shopping-cart"
 // />
 // </ShoppingCartIcon>
-
-// <CartContext.Consumer>
-//   {cart => (
-//   )}
-// </CartContext.Consumer>

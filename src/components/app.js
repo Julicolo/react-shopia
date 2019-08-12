@@ -47,28 +47,19 @@ library.add(
 export default withRouter(props => <Shopia {...props} />);
 
 class Shopia extends React.Component {
-  constructor() {
-    super();
-    this.addToCart = this.addToCart.bind(this);
-    this.removeFromCart = this.removeFromCart.bind(this);
-    this.toggleCart = this.toggleCart.bind(this);
-  }
-
   state = {
     isMenuOpen: false,
     isCartOpen: false,
     cartItems: [],
   };
 
-  addToCart(product) {
-    console.log(this.state);
-
+  addToCart = product => {
     this.setState({
       cartItems: [...this.state.cartItems, product],
     });
-  }
+  };
 
-  removeFromCart(product) {
+  removeFromCart = product => {
     const cartContent = [...this.state.cartItems];
 
     cartContent.splice(product, 1);
@@ -76,11 +67,11 @@ class Shopia extends React.Component {
     this.setState({
       cartItems: cartContent,
     });
-  }
+  };
 
-  toggleCart() {
+  toggleCart = () => {
     this.setState({isCartOpen: !this.state.isCartOpen});
-  }
+  };
 
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) this.onRouteChange();

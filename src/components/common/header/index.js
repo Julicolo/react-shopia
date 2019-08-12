@@ -43,7 +43,6 @@ export default function Header({toggleMenu, isMenuOpen}) {
         <UserOptions>
           <FontAwesomeIcon icon={['far', 'user']} />
           <FontAwesomeIcon icon="shopping-cart" />
-          <ShoppingCart />
           <label htmlFor="currencies">Currencies</label>
           <CurrencyButton id="currencies" aria-label="Currency selector">
             {Currencies.map(currency => {
@@ -54,6 +53,7 @@ export default function Header({toggleMenu, isMenuOpen}) {
               );
             })}
           </CurrencyButton>
+          <ShoppingCart />
         </UserOptions>
       </Menu>
     </StyledHeader>
