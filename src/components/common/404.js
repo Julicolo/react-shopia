@@ -1,8 +1,9 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import {NotFound} from '../styles';
 
 import {linkTo} from '../../helpers';
+
+import {NotFound} from '../styles';
 
 export default function PageNotFound() {
   return (

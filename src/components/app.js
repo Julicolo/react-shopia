@@ -1,5 +1,6 @@
 import React from 'react';
 import {Route, Switch, withRouter} from 'react-router-dom';
+import {library} from '@fortawesome/fontawesome-svg-core';
 
 import Home from './home';
 import About from './about';
@@ -11,7 +12,12 @@ import {CartContext} from './shoppingcart/cartcontext';
 
 import {GlobalStyle, Container} from './styles';
 
-import {library} from '@fortawesome/fontawesome-svg-core';
+// FortAwesome == FontAwesome, needs to be imported with camelCasing.
+
+// Usage for regular(far) & brands(fab) are the same, solid(fas) is different
+// Example brands/regular: <FontAwesomeIcon icon={['far', 'life-ring']} />
+// Example solid: <FontAwesomeIcon icon="shopping-cart" />
+import {faLifeRing, faClock, faUser} from '@fortawesome/free-regular-svg-icons';
 import {
   faPhoneAlt,
   faPlane,
@@ -20,7 +26,6 @@ import {
   faChevronRight,
   faChevronLeft,
 } from '@fortawesome/free-solid-svg-icons';
-import {faLifeRing, faClock, faUser} from '@fortawesome/free-regular-svg-icons';
 import {
   faFacebookF,
   faTwitter,
@@ -28,6 +33,8 @@ import {
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 
+// Adds the icons to the library which allows us to access it from anywhere -
+// by simplying including the library elsewhere.
 library.add(
   faPhoneAlt,
   faFacebookF,
@@ -48,13 +55,16 @@ export default withRouter(props => <Shopia {...props} />);
 
 class Shopia extends React.Component {
   state = {
+    selectedCurrency: 'EUR',
     isMenuOpen: false,
     isCartOpen: false,
+    cartSum: 0,
     cartItems: [],
   };
 
   addToCart = product => {
     this.setState({
+      cartSum: this.state.cartSum + product.price,
       cartItems: [...this.state.cartItems, product],
     });
   };
@@ -65,6 +75,7 @@ class Shopia extends React.Component {
     cartContent.splice(product, 1);
 
     this.setState({
+      cartSum: this.state.cartSum - product.price,
       cartItems: cartContent,
     });
   };
@@ -87,6 +98,8 @@ class Shopia extends React.Component {
         <GlobalStyle />
         <CartContext.Provider
           value={{
+            selectedCurrency: this.state.selectedCurrency,
+            cartSum: this.state.cartSum,
             cartItems: this.state.cartItems,
             addToCart: this.addToCart,
             removeFromCart: this.removeFromCart,
@@ -94,10 +107,15 @@ class Shopia extends React.Component {
           }}
         >
           <Header
+            changeCurrency={event =>
+              this.setState({
+                selectedCurrency: event.target.value,
+              })
+            }
+            isMenuOpen={this.state.isMenuOpen}
             toggleMenu={() =>
               this.setState({isMenuOpen: !this.state.isMenuOpen})
             }
-            isMenuOpen={this.state.isMenuOpen}
           />
           <Switch>
             <Route exact path={linkTo('/')} component={Home} />

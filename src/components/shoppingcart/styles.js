@@ -27,5 +27,7 @@ export const ShoppingCartSummary = styled.div`
         margin: 0 0.25rem;
       }
     }
+    .cart-sum {
+    }
   }
 `;

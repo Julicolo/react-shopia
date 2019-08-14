@@ -29,7 +29,7 @@ export const ImagesContainer = styled.div`
   margin-bottom: 2rem;
   @media ${device.tablet} {
     padding: 1rem 0;
-    height: 450px;
+    height: 550px;
   }
 `;
 
@@ -49,25 +49,11 @@ export const FeaturedImage = styled.div`
   }
 `;
 
-export const GalleryNavigation = styled.div`
-  font-size: 2rem;
-  height: 100%;
-  width: 5rem;
-  margin-${props => props.margin}: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  @media ${device.tabletS} {
-    margin-left: 0;
-    width: 3rem;
-  }
-`;
-
 export const HorizontalGalleryContainer = styled.div`
   display: flex;
   height: 120%;
   width: 100%;
+  user-select: none;
   overflow-x: scroll;
   overflow-y: hidden;
 `;

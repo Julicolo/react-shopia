@@ -1,13 +1,15 @@
 import React from 'react';
 
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
-import SliderImages from '../common/sliderimages';
 import Brands from '../common/brands';
 import Services from '../common/services';
 import {Products} from '../../data/products';
 
 import {BaseContainer, GamesWrapper} from '../products/styles';
+import {
+  SliderImages,
+  makeGalleryArrowLeft,
+  makeGalleryArrowRight,
+} from '../common/sliderimages';
 import {
   Main,
   ImagesContainer,
@@ -15,39 +17,8 @@ import {
   FeaturedImage,
   HorizontalGalleryContainer,
   UpcomingReleases,
-  GalleryNavigation,
   ImageGallery,
 } from './styles';
-
-function makeGalleryArrowLeft(targetContainer, scrollAmount) {
-  return (
-    <GalleryNavigation
-      margin={'right'}
-      onClick={() => {
-        const imageContainer = document.querySelector(targetContainer);
-
-        imageContainer.scrollLeft -= scrollAmount;
-      }}
-    >
-      <FontAwesomeIcon icon="chevron-left" />
-    </GalleryNavigation>
-  );
-}
-
-function makeGalleryArrowRight(targetContainer, scrollAmount) {
-  return (
-    <GalleryNavigation
-      margin={'left'}
-      onClick={() => {
-        const imageContainer = document.querySelector(targetContainer);
-
-        imageContainer.scrollLeft += scrollAmount;
-      }}
-    >
-      <FontAwesomeIcon icon="chevron-right" />
-    </GalleryNavigation>
-  );
-}
 
 export default function App() {
   return (

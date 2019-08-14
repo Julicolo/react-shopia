@@ -1,14 +1,14 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import ShoppingCart from '../../shoppingcart';
 
+import ShoppingCart from '../../shoppingcart';
 import {linkTo} from '../../../helpers';
 import {Currencies} from '../../../data/currencies';
 
 import {StyledHeader, UserOptions, Menu, CurrencyButton} from './styles';
 
-export default function Header({toggleMenu, isMenuOpen}) {
+export default function Header({changeCurrency, isMenuOpen, toggleMenu}) {
   return (
     <StyledHeader>
       <Menu>
@@ -30,6 +30,7 @@ export default function Header({toggleMenu, isMenuOpen}) {
             id="currencies"
             className="mobile"
             aria-label="Currency selector"
+            onChange={changeCurrency}
           >
             {Currencies.map(currency => {
               return (
@@ -44,7 +45,11 @@ export default function Header({toggleMenu, isMenuOpen}) {
           <FontAwesomeIcon icon={['far', 'user']} />
           <FontAwesomeIcon icon="shopping-cart" />
           <label htmlFor="currencies">Currencies</label>
-          <CurrencyButton id="currencies" aria-label="Currency selector">
+          <CurrencyButton
+            id="currencies"
+            aria-label="Currency selector"
+            onChange={changeCurrency}
+          >
             {Currencies.map(currency => {
               return (
                 <option value={currency} key={currency}>

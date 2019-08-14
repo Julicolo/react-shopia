@@ -1,5 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
 import {ServicesContainer, ServiceCard} from './styles';
 
 export default function Services() {

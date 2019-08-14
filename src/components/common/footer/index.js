@@ -1,9 +1,8 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import {linkTo} from '../../../helpers';
-
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import {SocialMediaButton} from '../social/styles';
 import {StyledFooter} from './styles';

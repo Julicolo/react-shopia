@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {CartContext} from './cartcontext';
+
 import {ShoppingCartSummary} from './styles';
 
 export default function ShoppingCart() {
@@ -19,6 +20,13 @@ export default function ShoppingCart() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="cart-sum">
+            <span>
+              {cart.cartSum !== 0
+                ? 'Total amount: ' + cart.selectedCurrency + cart.cartSum
+                : null}
+            </span>
           </div>
         </ShoppingCartSummary>
       )}
