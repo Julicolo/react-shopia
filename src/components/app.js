@@ -69,19 +69,13 @@ class Shopia extends React.Component {
     });
   };
 
-  removeFromCart = product => {
+  removeFromCart = index => {
     const cartContent = [...this.state.cartItems];
-
-    cartContent.splice(product, 1);
+    cartContent.splice(index, 1);
 
     this.setState({
-      cartSum: this.state.cartSum - product.price,
       cartItems: cartContent,
     });
-  };
-
-  toggleCart = () => {
-    this.setState({isCartOpen: !this.state.isCartOpen});
   };
 
   componentDidUpdate(prevProps) {
@@ -99,11 +93,11 @@ class Shopia extends React.Component {
         <CartContext.Provider
           value={{
             selectedCurrency: this.state.selectedCurrency,
+            isCartOpen: this.state.isCartOpen,
             cartSum: this.state.cartSum,
             cartItems: this.state.cartItems,
             addToCart: this.addToCart,
             removeFromCart: this.removeFromCart,
-            toggleCart: this.toggleCart,
           }}
         >
           <Header
@@ -116,6 +110,10 @@ class Shopia extends React.Component {
             toggleMenu={() =>
               this.setState({isMenuOpen: !this.state.isMenuOpen})
             }
+            isCartOpen={this.state.isCartOpen}
+            toggleCart={() => {
+              this.setState({isCartOpen: !this.state.isCartOpen});
+            }}
           />
           <Switch>
             <Route exact path={linkTo('/')} component={Home} />

@@ -8,7 +8,7 @@ export default function ShoppingCart() {
   return (
     <CartContext.Consumer>
       {cart => (
-        <ShoppingCartSummary>
+        <ShoppingCartSummary open={cart.isCartOpen}>
           <h2>{cart.cartItems.length || 'No'} items in cart</h2>
           <div className="item-container">
             {cart.cartItems.map((product, index) => (
@@ -33,10 +33,3 @@ export default function ShoppingCart() {
     </CartContext.Consumer>
   );
 }
-
-// <ShoppingCartIcon className={this.state.isCartOpen ? 'open' : null}>
-// <FontAwesomeIcon
-// onClick={() => this.toggleCart()}
-// icon="shopping-cart"
-// />
-// </ShoppingCartIcon>

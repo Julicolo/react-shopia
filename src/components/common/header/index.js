@@ -8,7 +8,13 @@ import {Currencies} from '../../../data/currencies';
 
 import {StyledHeader, UserOptions, Menu, CurrencyButton} from './styles';
 
-export default function Header({changeCurrency, isMenuOpen, toggleMenu}) {
+export default function Header({
+  changeCurrency,
+  isMenuOpen,
+  toggleMenu,
+  isCartOpen,
+  toggleCart,
+}) {
   return (
     <StyledHeader>
       <Menu>
@@ -43,7 +49,10 @@ export default function Header({changeCurrency, isMenuOpen, toggleMenu}) {
         </nav>
         <UserOptions>
           <FontAwesomeIcon icon={['far', 'user']} />
-          <FontAwesomeIcon icon="shopping-cart" />
+          <div className={isCartOpen ? 'open' : null} onClick={toggleCart}>
+            <FontAwesomeIcon icon="shopping-cart" />
+            <ShoppingCart />
+          </div>
           <label htmlFor="currencies">Currencies</label>
           <CurrencyButton
             id="currencies"
@@ -58,7 +67,6 @@ export default function Header({changeCurrency, isMenuOpen, toggleMenu}) {
               );
             })}
           </CurrencyButton>
-          <ShoppingCart />
         </UserOptions>
       </Menu>
     </StyledHeader>
