@@ -6,12 +6,13 @@ This website is made in React<br>
 
 ### `Tools used in this project`
 
-[Styled Components](https://styled-components.com/)<br>
+[React](https://reactjs.org/)<br>
 [React Router](https://reacttraining.com/react-router/)<br>
 [Webpack](https://webpack.js.org/)<br>
 [Babel](https://babeljs.io/)<br>
 [ESLint](https://eslint.org/)<br>
 [Prettier](https://prettier.io/)
+[Styled Components](https://styled-components.com/)<br>
 
 ## Available Scripts
 

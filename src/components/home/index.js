@@ -4,12 +4,12 @@ import Brands from '../common/brands';
 import Services from '../common/services';
 import {Products} from '../../data/products';
 
-import {BaseContainer, GamesWrapper} from '../products/styles';
 import {
   SliderImages,
   makeGalleryArrowLeft,
   makeGalleryArrowRight,
 } from '../common/sliderimages';
+
 import {
   Main,
   ImagesContainer,
@@ -20,28 +20,49 @@ import {
   ImageGallery,
 } from './styles';
 
+import {
+  SliderHeading,
+  NavigationWrapper,
+  BaseContainer,
+  GamesWrapper,
+} from '../products/styles';
+
 export default function App() {
   return (
     <Main>
-      <h2>Pre-Orders & Upcoming releases</h2>
-      <ImagesContainer>
-        {makeGalleryArrowLeft('.upcoming-releases-container', '232')}
-        <HorizontalGalleryContainer className="upcoming-releases-container">
-          <UpcomingReleases>
-            <SliderImages games={Products.upcoming.games} />
-          </UpcomingReleases>
-        </HorizontalGalleryContainer>
-        <FeaturedImage>
-          <img
-            src={require('../../images/games/upcoming/featured/big.jpg')}
-            alt="Featured upcoming  game"
-          />
-        </FeaturedImage>
-        {makeGalleryArrowRight('.upcoming-releases-container', '232')}
-      </ImagesContainer>
+      <GamesWrapper>
+        <SliderHeading>
+          <h2>Pre-Orders & Upcoming releases</h2>
+          <NavigationWrapper>
+            {makeGalleryArrowLeft('.upcoming-releases-container', '232')}
+            {makeGalleryArrowRight('.upcoming-releases-container', '232')}
+          </NavigationWrapper>
+        </SliderHeading>
+        <ImagesContainer>
+          {makeGalleryArrowLeft('.upcoming-releases-container', '232')}
+          <HorizontalGalleryContainer className="upcoming-releases-container">
+            <UpcomingReleases>
+              <SliderImages games={Products.upcoming.games} />
+            </UpcomingReleases>
+          </HorizontalGalleryContainer>
+          <FeaturedImage>
+            <img
+              src={require('../../images/games/upcoming/featured/big.jpg')}
+              alt="Featured upcoming  game"
+            />
+          </FeaturedImage>
+          {makeGalleryArrowRight('.upcoming-releases-container', '232')}
+        </ImagesContainer>
+      </GamesWrapper>
       <Services />
       <GamesWrapper>
-        <h2>New Nintendo Switch Games</h2>
+        <SliderHeading>
+          <h2>New Nintendo Switch Games</h2>
+          <NavigationWrapper>
+            {makeGalleryArrowLeft('.switch-games-container', '182')}
+            {makeGalleryArrowRight('.switch-games-container', '182')}
+          </NavigationWrapper>
+        </SliderHeading>
         <ImagesContainerSmall>
           {makeGalleryArrowLeft('.switch-games-container', '182')}
           <HorizontalGalleryContainer className="switch-games-container">
@@ -53,7 +74,13 @@ export default function App() {
         </ImagesContainerSmall>
       </GamesWrapper>
       <GamesWrapper>
-        <h2>New PlayStation 4 Games</h2>
+        <SliderHeading>
+          <h2>New PlayStation 4 Games</h2>
+          <NavigationWrapper>
+            {makeGalleryArrowLeft('.switch-games-container', '182')}
+            {makeGalleryArrowRight('.switch-games-container', '182')}
+          </NavigationWrapper>
+        </SliderHeading>
         <ImagesContainerSmall>
           {makeGalleryArrowLeft('.ps4-games-container', '182')}
           <HorizontalGalleryContainer className="ps4-games-container">
@@ -65,7 +92,13 @@ export default function App() {
         </ImagesContainerSmall>
       </GamesWrapper>
       <GamesWrapper>
-        <h2>New Xbox One Games</h2>
+        <SliderHeading>
+          <h2>New Xbox One Games</h2>
+          <NavigationWrapper>
+            {makeGalleryArrowLeft('.switch-games-container', '182')}
+            {makeGalleryArrowRight('.switch-games-container', '182')}
+          </NavigationWrapper>
+        </SliderHeading>
         <ImagesContainerSmall>
           {makeGalleryArrowLeft('.xbox1-games-container', '182')}
           <HorizontalGalleryContainer className="xbox1-games-container">

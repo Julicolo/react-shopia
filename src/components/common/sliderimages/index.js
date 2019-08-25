@@ -18,6 +18,7 @@ function renderImageArrays(obj) {
 export function makeGalleryArrowLeft(targetContainer, scrollAmount) {
   return (
     <GalleryNavigation
+      className="navigation-arrow"
       margin={'right'}
       onClick={() => {
         const imageContainer = document.querySelector(targetContainer);
@@ -33,6 +34,7 @@ export function makeGalleryArrowLeft(targetContainer, scrollAmount) {
 export function makeGalleryArrowRight(targetContainer, scrollAmount) {
   return (
     <GalleryNavigation
+      className="navigation-arrow"
       margin={'left'}
       onClick={() => {
         const imageContainer = document.querySelector(targetContainer);

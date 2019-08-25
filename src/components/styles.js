@@ -27,10 +27,6 @@ export const GlobalStyle = createGlobalStyle`
   a {
     color: white;
   }
-
-  .hidden {
-    display: none;    
-  }
 `;
 
 export const Container = styled.div`

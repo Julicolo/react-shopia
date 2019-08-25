@@ -94,7 +94,6 @@ export const Menu = styled.div`
       top: 83px;
       position: absolute;
       border-bottom: 4px solid var(--main-color);
-
       &.open {
         display: flex;
       }

@@ -13,9 +13,6 @@ export const Main = styled.main`
     padding-bottom: 1%;
     margin-bottom: 0;
     border-bottom: 4px solid var(--main-color);
-    @media ${device.mobileL} {
-      margin-left: 1rem;
-    }
   }
 `;
 
@@ -30,6 +27,11 @@ export const ImagesContainer = styled.div`
   @media ${device.tablet} {
     padding: 1rem 0;
     height: 550px;
+  }
+  @media ${device.mobileL} {
+    .navigation-arrow {
+      display: none;
+    }
   }
 `;
 

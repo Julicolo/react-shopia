@@ -1,6 +1,22 @@
 import styled from 'styled-components';
 import device from '../../helpers';
 
+export const SliderHeading = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+`;
+
+export const NavigationWrapper = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  @media (min-width: 500px) {
+    display: none;
+  }
+`;
+
 export const GamesWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -12,14 +28,14 @@ export const GamesWrapper = styled.div`
   :nth-child(2n + 1) {
     background-color: var(--light-black);
   }
-  @media ${device.laptopL} {
-    padding: 2rem 4.5%;
+  .mobile {
+    display: none;
   }
-  @media ${device.laptop} {
-    padding: 2rem 1.5%;
+  @media ${device.laptopL} {
+    padding: 2rem;
   }
   @media ${device.tablet} {
-    padding: 1rem 0;
+    padding: 1rem;
   }
 `;
 
