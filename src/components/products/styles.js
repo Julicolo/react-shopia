@@ -24,9 +24,9 @@ export const GamesWrapper = styled.div`
   flex-flow: column wrap;
   width: 100%;
   padding: 3rem 9%;
-  background-color: var(--dark-black);
-  :nth-child(2n + 1) {
-    background-color: var(--light-black);
+  background-color: var(--light-black);
+  :nth-child(odd):not(:first-child) {
+    background-color: var(--dark-black);
   }
   .mobile {
     display: none;

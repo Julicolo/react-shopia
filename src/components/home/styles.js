@@ -19,14 +19,13 @@ export const Main = styled.main`
 export const ImagesContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 600px;
+  height: 550px;
   align-items: flex-start;
   overflow: hidden;
   padding: 2rem 3rem;
   margin-bottom: 2rem;
   @media ${device.tablet} {
     padding: 1rem 0;
-    height: 550px;
   }
   @media ${device.mobileL} {
     .navigation-arrow {
@@ -36,7 +35,7 @@ export const ImagesContainer = styled.div`
 `;
 
 export const ImagesContainerSmall = styled(ImagesContainer)`
-  height: 500px;
+  height: 450px;
 `;
 
 export const FeaturedImage = styled.div`
