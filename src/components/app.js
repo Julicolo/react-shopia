@@ -62,7 +62,19 @@ class Shopia extends React.Component {
     cartItems: [],
   };
 
+  checkAvailability(arr, val) {
+    return arr.some(arrVal => val === arrVal);
+  }
+
   addToCart = product => {
+    console.log(this.state.cartItems);
+
+    // if (this.checkAvailability(this.state.cartItems, product)) {
+    //   this.setState({
+    //      code block
+    //   });
+    // }
+
     this.setState({
       cartSum: this.state.cartSum + product.price,
       cartItems: [...this.state.cartItems, product],
