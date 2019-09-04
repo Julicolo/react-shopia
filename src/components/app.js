@@ -58,6 +58,7 @@ class Shopia extends React.Component {
     selectedCurrency: 'EUR',
     isMenuOpen: false,
     isCartOpen: true,
+    cartSum: 0,
     cartItems: [],
   };
 
@@ -74,11 +75,19 @@ class Shopia extends React.Component {
 
     cartItems.forEach(obj => obj === product && product.amount++);
 
+    // Calling setState to set sum of cart to force rerender
+    this.setState({
+      cartSum: cartItems.reduce((total, productObj) => {
+        return total + productObj.amount * productObj.price;
+      }, 0)
+    });
+
     // If the Object already exists inside the cart, it will return
     if (this.checkAvailability(cartItems, product)) return;
 
+    // Calling this setState after the check to avoid duplication
     this.setState({
-      cartItems: [...cartItems, product],
+      cartItems: [...cartItems, product]
     });
   };
 

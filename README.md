@@ -11,7 +11,7 @@ This website is made in React<br>
 [Webpack](https://webpack.js.org/)<br>
 [Babel](https://babeljs.io/)<br>
 [ESLint](https://eslint.org/)<br>
-[Prettier](https://prettier.io/)
+[Prettier](https://prettier.io/)<br>
 [Styled Components](https://styled-components.com/)<br>
 
 ## Available Scripts

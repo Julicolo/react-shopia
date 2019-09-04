@@ -13,6 +13,7 @@ export const ShoppingCartSummary = styled.div`
   right: -20px;
   border: 3px solid var(--main-color);
   user-select: none;
+  font-size: .75rem;
   .item-container {
     width: 100%;
     padding: 0.5rem;

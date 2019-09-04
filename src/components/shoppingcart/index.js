@@ -23,12 +23,7 @@ export default function ShoppingCart() {
             ))}
           </div>
           <div className="cart-sum">
-            <span>
-              Total amount: € {cart.cartItems.reduce((total, productObj) => {
-                console.log(productObj.amount, productObj.price);
-                return total + productObj.amount * productObj.price;
-              }, 0)}
-            </span>
+            <span>Total amount: € {cart.cartSum}</span>
           </div>
         </ShoppingCartSummary>
       )}

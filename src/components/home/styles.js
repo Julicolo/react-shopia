@@ -24,7 +24,7 @@ export const ImagesContainer = styled.div`
   overflow: hidden;
   padding: 2rem 3rem;
   margin-bottom: 2rem;
-  @media ${device.tablet} {
+  @media ${device.tabletM} {
     padding: 1rem 0;
   }
   @media ${device.mobileL} {
@@ -72,7 +72,7 @@ export const UpcomingReleases = styled.div`
     display: flex;
     flex-flow: row nowrap;
   }
-  @media ${device.tablet} {
+  @media ${device.tabletM} {
     img {
       margin: 0 1rem 1rem 0;
     }

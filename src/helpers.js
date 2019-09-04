@@ -9,7 +9,7 @@ const sizes = {
   mobileM: 375,
   mobileL: 500,
   tabletS: 650,
-  tablet: 850,
+  tabletM: 850,
   tabletL: 1000,
   laptop: 1024,
   laptopL: 1440,

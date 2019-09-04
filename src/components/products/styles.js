@@ -34,7 +34,7 @@ export const GamesWrapper = styled.div`
   @media ${device.laptopL} {
     padding: 2rem;
   }
-  @media ${device.tablet} {
+  @media ${device.tabletM} {
     padding: 1rem;
   }
 `;
@@ -50,7 +50,7 @@ export const BaseContainer = styled.div`
     max-height: 4rem;
     margin: 1.5rem;
   }
-  @media ${device.tablet} {
+  @media ${device.tabletM} {
     padding: 0;
   }
 `;
@@ -64,7 +64,7 @@ export const CollectionContainer = styled(BaseContainer)`
     margin: 1.5rem;
     height: 18rem;
     width: 200px;
-    @media ${device.tablet} {
+    @media ${device.tabletM} {
       height: auto;
       max-width: 30%;
       width: 26%;

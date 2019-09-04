@@ -44,7 +44,7 @@ export const ServiceCard = styled.div`
       border-left: 37px solid ${props => props.bgcolor || 'black'};
       z-index: 2000;
     }
-    @media ${device.tablet} {
+    @media ${device.tabletM} {
       width: 100%;
       justify-content: center;
       ::before {
@@ -99,7 +99,7 @@ export const ServiceCard = styled.div`
       border-bottom: 32px solid transparent;
       border-left: 50px solid ${props => props.bgcolor || 'var(--main-color);'};
     }
-    @media ${device.tablet} {
+    @media ${device.tabletM} {
       width: 100%;
       justify-content: center;
       height: 4rem;
@@ -120,7 +120,7 @@ export const ServiceCard = styled.div`
       border-bottom: 37px solid transparent;
       border-right: 37px solid ${props => props.bgcolor || 'black'};
     }
-    @media ${device.tablet} {
+    @media ${device.tabletM} {
       width: 100%;
       justify-content: center;
       ::before {
