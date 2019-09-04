@@ -58,7 +58,6 @@ class Shopia extends React.Component {
     selectedCurrency: 'EUR',
     isMenuOpen: false,
     isCartOpen: true,
-    cartSum: 0,
     cartItems: [],
   };
 
@@ -71,9 +70,9 @@ class Shopia extends React.Component {
     const {cartItems} = this.state;
 
     // Adds a counters to the product object
-    if (!product.hasOwnProperty('count')) product.count = 1;
+    if (!product.hasOwnProperty('amount')) product.amount = 1;
 
-    cartItems.map(obj => obj === product ? product.count++ : null);
+    cartItems.forEach(obj => obj === product && product.amount++);
 
     // If the Object already exists inside the cart, it will return
     if (this.checkAvailability(cartItems, product)) return;
@@ -81,8 +80,6 @@ class Shopia extends React.Component {
     this.setState({
       cartItems: [...cartItems, product],
     });
-
-    console.log(cartItems);
   };
 
   removeFromCart = index => {

@@ -14,6 +14,7 @@ export default function ShoppingCart() {
             {cart.cartItems.map((product, index) => (
               <div className="cart-product" key={index}>
                 <span>{product.name}</span>
+                <span>{product.amount}</span>
                 <div className="cart-price-button">
                   <span>{product.price}</span>
                   <button onClick={() => cart.removeFromCart(index)}>X</button>
@@ -23,9 +24,10 @@ export default function ShoppingCart() {
           </div>
           <div className="cart-sum">
             <span>
-              {cart.cartSum !== 0
-                ? 'Total amount: ' + cart.selectedCurrency + cart.cartSum
-                : null}
+              Total amount: € {cart.cartItems.reduce((total, productObj) => {
+                console.log(productObj.amount, productObj.price);
+                return total + productObj.amount * productObj.price;
+              }, 0)}
             </span>
           </div>
         </ShoppingCartSummary>
