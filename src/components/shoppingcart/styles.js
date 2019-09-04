@@ -18,8 +18,17 @@ export const ShoppingCartSummary = styled.div`
     padding: 0.5rem;
     .cart-product {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin: 0.75rem 0.5rem;
+      & span {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        :first-child {
+          justify-content: flex-start;
+        }
+      }
     }
     .cart-price-button {
       display: flex;
