@@ -10,8 +10,9 @@ export const ShoppingCartSummary = styled.div`
   background-color: var(--dark-black);
   position: absolute;
   top: 64px;
-  right: 0;
+  right: -20px;
   border: 3px solid var(--main-color);
+  user-select: none;
   .item-container {
     width: 100%;
     padding: 0.5rem;

@@ -57,28 +57,32 @@ class Shopia extends React.Component {
   state = {
     selectedCurrency: 'EUR',
     isMenuOpen: false,
-    isCartOpen: false,
+    isCartOpen: true,
     cartSum: 0,
     cartItems: [],
   };
 
-  checkAvailability(arr, val) {
-    return arr.some(arrVal => val === arrVal);
+  // Used for checking if Object already exists inside array
+  checkAvailability(array, value) {
+    return array.some(arrayContent => value === arrayContent);
   }
 
   addToCart = product => {
-    console.log(this.state.cartItems);
+    const {cartItems} = this.state;
 
-    // if (this.checkAvailability(this.state.cartItems, product)) {
-    //   this.setState({
-    //      code block
-    //   });
-    // }
+    // Adds a counters to the product object
+    if (!product.hasOwnProperty('count')) product.count = 1;
+
+    cartItems.map(obj => obj === product ? product.count++ : null);
+
+    // If the Object already exists inside the cart, it will return
+    if (this.checkAvailability(cartItems, product)) return;
 
     this.setState({
-      cartSum: this.state.cartSum + product.price,
-      cartItems: [...this.state.cartItems, product],
+      cartItems: [...cartItems, product],
     });
+
+    console.log(cartItems);
   };
 
   removeFromCart = index => {
