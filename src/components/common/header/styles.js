@@ -21,6 +21,8 @@ export const UserOptions = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
+  &.mobile,
+  .mobile,
   label {
     display: none;
   }
@@ -30,6 +32,17 @@ export const UserOptions = styled.div`
   @media ${device.tabletS} {
     select {
       display: none;
+    }
+  }
+  @media ${device.mobileS} {
+    &.open {
+      display: none;
+    }
+    &.mobile {
+      display: flex;
+      width: 100%;
+      justify-content: inherit;
+      border-top: 1px solid white;
     }
   }
 `;
@@ -56,7 +69,7 @@ export const Menu = styled.div`
   }
   & svg {
     user-select: none;
-    color: var(--main-color);
+    color: white;
   }
   & nav {
     display: flex;
@@ -128,7 +141,7 @@ export const CurrencyButton = styled.select`
   background-color: var(--light-black);
   color: white;
   border: none;
-  height: 2rem;
+  height: 40px;
   width: 4.5rem;
   font-size: 1.1rem;
   text-align: center;

@@ -2,28 +2,35 @@ import React from 'react';
 
 import {CartContext} from './cartcontext';
 
-import {ShoppingCartSummary} from './styles';
+import {ShoppingCartSummary, ShoppingCartItems} from './styles';
 
 export default function ShoppingCart() {
   return (
     <CartContext.Consumer>
       {cart => (
         <ShoppingCartSummary open={cart.isCartOpen}>
-          <h2>{cart.cartItems.length || 'No'} items in cart</h2>
-          <div className="item-container">
-            {cart.cartItems.map((product, index) => (
-              <div className="cart-product" key={index}>
-                <span>{product.name}</span>
-                <span>{product.amount}</span>
-                <div className="cart-price-button">
-                  <span>{product.price}</span>
-                  <button onClick={() => cart.removeFromCart(index)}>X</button>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ShoppingCartItems>
+            <div className="product-name">
+              <h3>Product</h3>
+              {cart.cartItems.map((product, index) => (
+                <span key={index}>{product.name}</span>
+              ))}
+            </div>
+            <div>
+              <h3>Amount</h3>
+              {cart.cartItems.map((product, index) => (
+                <span key={index}>{product.amount}</span>
+              ))}
+            </div>
+            <div>
+              <h3>Price</h3>
+              {cart.cartItems.map((product, index) => (
+                <span key={index}>&euro;{product.price * product.amount}</span>
+              ))}
+            </div>
+          </ShoppingCartItems>
           <div className="cart-sum">
-            <span>Total amount: € {cart.cartSum}</span>
+            <span>Total amount: &euro;{cart.cartSum}</span>
           </div>
         </ShoppingCartSummary>
       )}

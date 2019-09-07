@@ -5,41 +5,47 @@ export const ShoppingCartSummary = styled.div`
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  width: 400px;
+  width: 100%;
+  min-width: 325px;
   z-index: 3000;
   background-color: var(--dark-black);
   position: absolute;
   top: 64px;
-  right: -20px;
+  right: 0vw;
   border: 3px solid var(--main-color);
   user-select: none;
-  font-size: .75rem;
-  .item-container {
-    width: 100%;
-    padding: 0.5rem;
-    .cart-product {
-      display: flex;
-      justify-content: space-around;
-      margin: 0.75rem 0.5rem;
-      & span {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        :first-child {
-          justify-content: flex-start;
-        }
-      }
-    }
-    .cart-price-button {
-      display: flex;
-      align-items: center;
-      span {
-        margin: 0 0.25rem;
-      }
+  font-size: 0.75rem;
+  .cart-price-button {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0 0.25rem;
     }
   }
   .cart-sum {
     margin: 0.5rem;
+  }
+`;
+
+export const ShoppingCartItems = styled.div`
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  div {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    h3 {
+      padding: 0.5rem;
+      margin: 0;
+    }
+    span {
+      padding: 0.5rem;
+      border-bottom: 1px solid var(--main-color);
+    }
+  }
+  .product-name {
+    min-width: 150px;
+    text-align: left;
   }
 `;

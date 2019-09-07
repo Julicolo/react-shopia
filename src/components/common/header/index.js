@@ -46,8 +46,30 @@ export default function Header({
               );
             })}
           </CurrencyButton>
+          <UserOptions className="mobile">
+            <FontAwesomeIcon icon={['far', 'user']} />
+            <div className={isCartOpen ? 'open' : null} onClick={toggleCart}>
+              <FontAwesomeIcon icon="shopping-cart" />
+              <ShoppingCart />
+            </div>
+            <label htmlFor="currencies">Currencies</label>
+            <CurrencyButton
+              className="mobile"
+              id="currencies"
+              aria-label="Currency selector"
+              onChange={changeCurrency}
+            >
+              {Currencies.map(currency => {
+                return (
+                  <option value={currency} key={currency}>
+                    {currency}
+                  </option>
+                );
+              })}
+            </CurrencyButton>
+          </UserOptions>
         </nav>
-        <UserOptions>
+        <UserOptions className="open">
           <FontAwesomeIcon icon={['far', 'user']} />
           <div className={isCartOpen ? 'open' : null} onClick={toggleCart}>
             <FontAwesomeIcon icon="shopping-cart" />
