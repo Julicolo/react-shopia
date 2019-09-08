@@ -2,7 +2,11 @@ import React from 'react';
 
 import {CartContext} from './cartcontext';
 
-import {ShoppingCartSummary, ShoppingCartItems} from './styles';
+import {
+  ShoppingCartSummary,
+  ShoppingCartItems,
+  ShoppingCartButton,
+} from './styles';
 
 export default function ShoppingCart() {
   return (
@@ -31,6 +35,7 @@ export default function ShoppingCart() {
           </ShoppingCartItems>
           <div className="cart-sum">
             <span>Total amount: &euro;{cart.cartSum}</span>
+            <ShoppingCartButton>Checkout</ShoppingCartButton>
           </div>
         </ShoppingCartSummary>
       )}

@@ -23,7 +23,12 @@ export const ShoppingCartSummary = styled.div`
     }
   }
   .cart-sum {
-    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
   }
 `;
 
@@ -48,4 +53,13 @@ export const ShoppingCartItems = styled.div`
     min-width: 150px;
     text-align: left;
   }
+`;
+
+export const ShoppingCartButton = styled.a`
+  width: 30%;
+  height: 20px;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

@@ -2,7 +2,7 @@
   "name": "shopia",
   "version": "0.1.0",
   "private": true,
-  "description": "Shopia is an online fashion webshop",
+  "description": "Shopia is an online gaming store that sells games, for gamers",
   "homepage": "https://julicolo.github.io/shopia",
   "main": "index.js",
   "author": "Julio Schilders",
