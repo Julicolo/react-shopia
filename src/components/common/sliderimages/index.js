@@ -1,9 +1,12 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
+
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import {CartContext} from '../../shoppingcart/cartcontext';
+import {linkTo} from '../../../helpers';
 
-import {GalleryNavigation} from './styles';
+import {GalleryNavigation, UpcomingGame} from './styles';
 
 function renderImageArrays(obj) {
   return Object.values(obj).reduce(
@@ -20,7 +23,7 @@ export function makeGalleryArrowLeft(targetContainer, scrollAmount) {
     <GalleryNavigation
       className="navigation-arrow"
       margin={'right'}
-      onClick={() => {
+      onClick={event => {
         const imageContainer = document.querySelector(targetContainer);
 
         imageContainer.scrollLeft -= scrollAmount;
@@ -36,7 +39,7 @@ export function makeGalleryArrowRight(targetContainer, scrollAmount) {
     <GalleryNavigation
       className="navigation-arrow"
       margin={'left'}
-      onClick={() => {
+      onClick={event => {
         const imageContainer = document.querySelector(targetContainer);
 
         imageContainer.scrollLeft += scrollAmount;
@@ -55,11 +58,15 @@ export function SliderImages(props) {
           <CartContext.Consumer key={index}>
             {cart => {
               return (
-                <img
-                  alt={product.description}
-                  src={product.path}
-                  onClick={() => cart.addToCart(product)}
-                />
+                <UpcomingGame>
+                  <NavLink to={linkTo(`/${product.pathName}`)}>
+                    <img alt={product.name} src={product.path} />
+                  </NavLink>
+                  <span>&euro;{product.price}</span>
+                  <button onClick={() => cart.addToCart(product)}>
+                    Add to cart
+                  </button>
+                </UpcomingGame>
               );
             }}
           </CartContext.Consumer>

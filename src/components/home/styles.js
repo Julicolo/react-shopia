@@ -19,7 +19,7 @@ export const Main = styled.main`
 export const ImagesContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 550px;
+  height: 575px;
   align-items: flex-start;
   overflow: hidden;
   padding: 2rem 3rem;
@@ -35,7 +35,7 @@ export const ImagesContainer = styled.div`
 `;
 
 export const ImagesContainerSmall = styled(ImagesContainer)`
-  height: 450px;
+  height: 475px;
 `;
 
 export const FeaturedImage = styled.div`
@@ -63,23 +63,9 @@ export const UpcomingReleases = styled.div`
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
-  img {
-    margin: 0 2rem 2rem 0;
-    height: 250px;
-    max-width: 100%;
-  }
-  div {
+  > div {
     display: flex;
     flex-flow: row nowrap;
-  }
-  @media ${device.tabletM} {
-    img {
-      margin: 0 1rem 1rem 0;
-    }
-  }
-  @media ${device.tabletS} {
-    img {
-    }
   }
 `;
 

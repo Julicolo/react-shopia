@@ -1,6 +1,8 @@
 import React from 'react';
 
 import {CartContext} from './cartcontext';
+import {NavLink} from 'react-router-dom';
+import {linkTo} from '../../helpers';
 
 import {
   ShoppingCartSummary,
@@ -35,7 +37,9 @@ export default function ShoppingCart() {
           </ShoppingCartItems>
           <div className="cart-sum">
             <span>Total amount: &euro;{cart.cartSum}</span>
-            <ShoppingCartButton>Checkout</ShoppingCartButton>
+            <NavLink to={linkTo('/checkout')}>
+              <ShoppingCartButton>Checkout</ShoppingCartButton>
+            </NavLink>
           </div>
         </ShoppingCartSummary>
       )}

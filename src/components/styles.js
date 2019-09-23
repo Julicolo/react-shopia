@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     --main-color: #4724a8;
     --dark-black: #171717;
     --light-black: #222;
+    --friendly-orange: #e68628;
   }
 
   * {

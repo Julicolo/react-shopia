@@ -55,11 +55,13 @@ export const ShoppingCartItems = styled.div`
   }
 `;
 
-export const ShoppingCartButton = styled.a`
-  width: 30%;
-  height: 20px;
-  background-color: orange;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const ShoppingCartButton = styled.button`
+  background-color: var(--friendly-orange);
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  height: 1.5rem;
+  width: 100%;
+  color: white;
+  cursor: pointer;
 `;
